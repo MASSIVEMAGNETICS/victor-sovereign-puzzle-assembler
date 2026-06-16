@@ -1,0 +1,12 @@
+# Victor Sovereign Puzzle Assembler
+# Core dependencies (expand as pieces grow)
+
+# For future TDA / fractal enhancements
+# ripser
+# persim
+# giotto-tda
+
+# For advanced orchestration / graphs (optional)
+# networkx
+
+# Persistence (simple JSON is used by default; upgrade to sqlite if needed)
