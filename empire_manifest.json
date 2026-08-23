@@ -1,0 +1,110 @@
+{
+  "version": "1.0.0",
+  "owner": "MASSIVEMAGNETICS",
+  "mission": "Turn the GitHub lattice into one observable, self-assembling, revenue-aware operating system.",
+  "terminal_states": [
+    "SHIPPED",
+    "MONETIZED",
+    "MERGED",
+    "ARCHIVED",
+    "KILLED"
+  ],
+  "pillars": [
+    {
+      "id": "identity_surface",
+      "name": "iambandobandz / Empire Router",
+      "priority": 10,
+      "patterns": ["iambando", "github.io", "website", "web", "store", "portal", "brand", "site"],
+      "canonical_repos": [
+        "MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io"
+      ],
+      "purpose": "Public identity, fan routing, admin surface, creator entry points and commerce."
+    },
+    {
+      "id": "victor_core",
+      "name": "Victor Authority + Continuity",
+      "priority": 10,
+      "patterns": ["victor", "omni", "continuity", "memory", "identity", "sovereign", "dcs", "cortex", "ssi", "choice", "chronos"],
+      "canonical_repos": [
+        "MASSIVEMAGNETICS/victorOS",
+        "MASSIVEMAGNETICS/victor-whole",
+        "MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler",
+        "MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator",
+        "MASSIVEMAGNETICS/omni"
+      ],
+      "purpose": "Identity, authority, memory, bounded execution, verification, continuity and assembly."
+    },
+    {
+      "id": "dev_execution",
+      "name": "Dev-Ville Execution Layer",
+      "priority": 9,
+      "patterns": ["dev-ville", "devv-ville", "autodeploy", "repo-brain", "agent_creator", "employee-ai", "reconforge", "autopilot", "assembler"],
+      "canonical_repos": [
+        "MASSIVEMAGNETICS/dev-ville",
+        "MASSIVEMAGNETICS/repo-brain",
+        "MASSIVEMAGNETICS/victor-os-autodeploy"
+      ],
+      "purpose": "Turns decisions into code, tests, pull requests, deployments and receipts."
+    },
+    {
+      "id": "music_engine",
+      "name": "Music + Catalog Engine",
+      "priority": 9,
+      "patterns": ["suno", "song", "music", "audio", "voice", "starpower", "steel-city", "ai-ear", "ace-step", "resonance", "master"],
+      "canonical_repos": [
+        "MASSIVEMAGNETICS/suno-killer",
+        "MASSIVEMAGNETICS/victor-suno-godcore",
+        "MASSIVEMAGNETICS/massive_starpower",
+        "MASSIVEMAGNETICS/the-ai-ear"
+      ],
+      "purpose": "Song generation, selection, voice, mastering, catalog packaging and autonomous promotion."
+    },
+    {
+      "id": "b_heard",
+      "name": "B Heard Network",
+      "priority": 9,
+      "patterns": ["b-heard", "beheard", "creator", "broadcast", "tv", "spotlight", "affiliate", "submission"],
+      "canonical_repos": [],
+      "purpose": "Creator acquisition, submissions, broadcast rotation, TV surfaces and referral economics."
+    },
+    {
+      "id": "truth_revenue",
+      "name": "Truth Compiler + Revenue",
+      "priority": 10,
+      "patterns": ["truth", "compiler", "evidence", "audit", "revenue", "money", "stripe", "commerce", "grade"],
+      "canonical_repos": [
+        "MASSIVEMAGNETICS/grade-v2"
+      ],
+      "purpose": "Evidence-grounded audits, productization, checkout, revenue telemetry and monetization."
+    },
+    {
+      "id": "frontier_rnd",
+      "name": "Massive Magnetics Frontier R&D",
+      "priority": 7,
+      "patterns": ["fractal", "gravit", "tensor", "phom", "magnet", "metamaterial", "synthetic", "transformer", "mycel", "rhizome", "aether"],
+      "canonical_repos": [
+        "MASSIVEMAGNETICS/fti-phom",
+        "MASSIVEMAGNETICS/Gravitronics",
+        "MASSIVEMAGNETICS/Lightweight-Gravitational-Transformer"
+      ],
+      "purpose": "Research primitives that can become Victor organs, defensible IP or standalone products."
+    },
+    {
+      "id": "supporting_lattice",
+      "name": "Supporting Lattice",
+      "priority": 4,
+      "patterns": [],
+      "canonical_repos": [],
+      "purpose": "Everything not yet promoted into a canonical empire pillar."
+    }
+  ],
+  "autopilot": {
+    "stale_days": 30,
+    "critical_stale_days": 90,
+    "max_attention_repos": 15,
+    "max_next_actions": 12,
+    "daily_rem_cycles": 3,
+    "default_mode": "observe-plan-assemble-local",
+    "cross_repo_write_policy": "disabled-unless-explicitly-authorized"
+  }
+}
