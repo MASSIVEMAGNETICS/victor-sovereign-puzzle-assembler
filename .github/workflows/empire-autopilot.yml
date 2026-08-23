@@ -1,0 +1,121 @@
+name: Empire Autopilot Daily
+
+on:
+  schedule:
+    # 13:17 UTC = morning in America/New_York year-round (08:17 EST / 09:17 EDT).
+    # Offset from the top of the hour to reduce GitHub scheduler congestion.
+    - cron: "17 13 * * *"
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "empire_autopilot.py"
+      - "empire_manifest.json"
+      - "tests/**"
+      - "pieces/**"
+      - "victor_sovereign_assembler.py"
+      - "run_victor.py"
+      - ".github/workflows/empire-autopilot.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "empire_autopilot.py"
+      - "empire_manifest.json"
+      - "pieces/**"
+      - "victor_sovereign_assembler.py"
+      - "run_victor.py"
+
+permissions:
+  contents: write
+  pull-requests: read
+  issues: read
+
+env:
+  PYTHONUNBUFFERED: "1"
+  GITHUB_OWNER: MASSIVEMAGNETICS
+
+concurrency:
+  group: empire-autopilot-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Verify autopilot
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Smoke-test Victor assembly
+        run: python run_victor.py
+
+  daily-assembly:
+    name: Scan assemble verify receipt
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify code
+        run: python -m unittest discover -s tests -v
+
+      - name: Run Victor autonomous assembly
+        run: python run_victor.py --autonomous --rem-cycles 3 --load-state
+
+      - name: Scan empire lattice and build receipt
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          # Optional: create repository secret EMPIRE_GH_PAT to include private repos
+          # owned by MASSIVEMAGNETICS in the lattice scan. Without it, the run remains
+          # functional and inventories public repos plus anything visible to GITHUB_TOKEN.
+          EMPIRE_GH_PAT: ${{ secrets.EMPIRE_GH_PAT }}
+        run: python empire_autopilot.py --owner "$GITHUB_OWNER"
+
+      - name: Publish run summary
+        shell: bash
+        run: cat EMPIRE_STATUS.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload immutable run receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: empire-receipt-${{ github.run_id }}
+          path: |
+            EMPIRE_STATUS.md
+            state/empire.json
+            victor_state.json
+            victor_assembler.log
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Commit evolving state
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "victor-empire-autopilot[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add EMPIRE_STATUS.md state/empire.json victor_state.json
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(empire): daily assembly receipt $(date -u +%F)"
+          git push
