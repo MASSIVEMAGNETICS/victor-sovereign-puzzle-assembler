@@ -21,7 +21,7 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             "html_url": f"https://github.com/{repo}/pull/{number}",
         }
 
-    def test_victoros_donor_is_never_review_merge(self):
+    def test_victoros_donor_is_routed_to_donor_integration(self):
         pr = self._pr(
             "MASSIVEMAGNETICS/victorOS",
             4,
@@ -30,7 +30,8 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             body="DO NOT MERGE THIS BRANCH AS-IS. Preserve it as donor/source material.",
         )
         actions = guarded.build_next_actions_guarded([], [pr], self.manifest)
-        self.assertEqual(actions[0]["kind"], "review_pr_draft")
+        self.assertEqual(actions[0]["kind"], "review_pr_donor")
+        self.assertIn("Integrate donor material PR #4", actions[0]["title"])
         self.assertNotIn("Review/merge", actions[0]["title"])
         self.assertNotIn("Review merge candidate", actions[0]["title"])
 
@@ -45,6 +46,19 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
         actions = guarded.build_next_actions_guarded([], [pr], self.manifest)
         self.assertEqual(actions[0]["kind"], "review_pr_draft")
         self.assertIn("Review draft PR #7", actions[0]["title"])
+
+    def test_non_draft_approval_gate_is_not_a_merge_candidate(self):
+        pr = self._pr(
+            "MASSIVEMAGNETICS/dev-ville",
+            19,
+            "Add secure browser admin sessions for iambandobandz.com",
+            draft=False,
+            body="Approval gate: do not merge automatically until production probes pass.",
+        )
+        actions = guarded.build_next_actions_guarded([], [pr], self.manifest)
+        self.assertEqual(actions[0]["kind"], "review_pr_gated")
+        self.assertIn("Review approval gate PR #19", actions[0]["title"])
+        self.assertNotIn("Review merge candidate", actions[0]["title"])
 
     def test_non_draft_unblocked_pr_is_only_merge_review_candidate(self):
         pr = self._pr(
