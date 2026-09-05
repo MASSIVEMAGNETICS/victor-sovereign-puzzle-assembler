@@ -9,22 +9,22 @@ class PRActionPolicyTests(unittest.TestCase):
         self.assertEqual(result.action, "review_draft")
         self.assertFalse(result.merge_candidate)
 
-    def test_draft_donor_title_is_not_merge_candidate(self):
+    def test_draft_donor_title_routes_to_donor_integration(self):
         result = classify_pr_disposition(
             {
                 "title": "DRAFT DONOR: Victor GEV mobile Empire control plane v0.2",
                 "body": "Useful source material for v0.3.",
-                "draft": False,
+                "draft": True,
             }
         )
         self.assertEqual(result.action, "review_donor")
         self.assertFalse(result.merge_candidate)
 
-    def test_do_not_merge_body_fails_closed(self):
+    def test_do_not_merge_as_is_body_is_donor(self):
         result = classify_pr_disposition(
             {
                 "title": "Experimental continuity adapter",
-                "body": "DO NOT MERGE AS-IS; physical-device acceptance remains pending.",
+                "body": "DO NOT MERGE AS-IS; preserve this as source material.",
                 "draft": False,
             }
         )
@@ -36,6 +36,28 @@ class PRActionPolicyTests(unittest.TestCase):
             {
                 "title": "Security boundary update",
                 "body": "Requires human review before promotion.",
+                "draft": False,
+            }
+        )
+        self.assertEqual(result.action, "review_gated")
+        self.assertFalse(result.merge_candidate)
+
+    def test_approval_gate_is_review_only_not_donor(self):
+        result = classify_pr_disposition(
+            {
+                "title": "Bounded runtime update",
+                "body": "Approval gate: do not merge automatically until exact-head verification passes.",
+                "draft": False,
+            }
+        )
+        self.assertEqual(result.action, "review_gated")
+        self.assertFalse(result.merge_candidate)
+
+    def test_production_gate_is_review_only_not_donor(self):
+        result = classify_pr_disposition(
+            {
+                "title": "Owner session hardening",
+                "body": "Production gate: deployment and real probes require owner approval.",
                 "draft": False,
             }
         )
