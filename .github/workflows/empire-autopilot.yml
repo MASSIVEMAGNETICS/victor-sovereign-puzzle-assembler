@@ -9,6 +9,8 @@ on:
   pull_request:
     paths:
       - "empire_autopilot.py"
+      - "empire_autopilot_guarded.py"
+      - "pr_action_policy.py"
       - "empire_manifest.json"
       - "tests/**"
       - "pieces/**"
@@ -20,6 +22,8 @@ on:
       - main
     paths:
       - "empire_autopilot.py"
+      - "empire_autopilot_guarded.py"
+      - "pr_action_policy.py"
       - "empire_manifest.json"
       - "pieces/**"
       - "victor_sovereign_assembler.py"
@@ -88,7 +92,7 @@ jobs:
           # owned by MASSIVEMAGNETICS in the lattice scan. Without it, the run remains
           # functional and inventories public repos plus anything visible to GITHUB_TOKEN.
           EMPIRE_GH_PAT: ${{ secrets.EMPIRE_GH_PAT }}
-        run: python empire_autopilot.py --owner "$GITHUB_OWNER"
+        run: python empire_autopilot_guarded.py --owner "$GITHUB_OWNER"
 
       - name: Publish run summary
         shell: bash
