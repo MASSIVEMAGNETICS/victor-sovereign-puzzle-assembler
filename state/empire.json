@@ -2,56 +2,56 @@
   "api_errors": [
     "GitHub API 403 for https://api.github.com/user/repos?affiliation=owner&visibility=all&sort=updated&direction=desc&per_page=100&page=1: {\"message\":\"Resource not accessible by integration\",\"documentation_url\":\"https://docs.github.com/rest/repos/repos#list-repositories-for-the-authenticated-user\",\"status\":\"403\"}"
   ],
-  "api_request_count": 5,
+  "api_request_count": 10,
   "cross_repo_write_policy": "disabled-unless-explicitly-authorized",
-  "generated_at": "2026-09-06T16:17:39.759271+00:00",
+  "generated_at": "2026-09-07T00:46:51.715144+00:00",
   "mission": "Turn the GitHub lattice into one observable, self-assembling, revenue-aware operating system.",
   "mode": "observe-plan-assemble-local",
   "next_actions": [
     {
-      "kind": "review_pr",
+      "kind": "review_pr_draft",
       "priority": "P0",
-      "reason": "Open pull requests are the shortest path from work-in-progress to MERGED/SHIPPED.",
+      "reason": "GitHub marks the pull request as draft.",
+      "repo": "MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io",
+      "title": "Review draft PR #45: Prototype public Massive Magnetics Convergence Engine",
+      "url": "https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io/pull/45"
+    },
+    {
+      "kind": "review_pr_gated",
+      "priority": "P0",
+      "reason": "Pull request declares a human, acceptance, production, or approval gate.",
       "repo": "MASSIVEMAGNETICS/omni",
-      "title": "Review/merge PR #2: Close AI Ear placeholder with deterministic local acoustic evidence",
+      "title": "Review approval gate PR #2: Close AI Ear placeholder with deterministic local acoustic evidence",
       "url": "https://github.com/MASSIVEMAGNETICS/omni/pull/2"
     },
     {
-      "kind": "review_pr",
+      "kind": "review_pr_gated",
       "priority": "P0",
-      "reason": "Open pull requests are the shortest path from work-in-progress to MERGED/SHIPPED.",
+      "reason": "Pull request declares a human, acceptance, production, or approval gate.",
       "repo": "MASSIVEMAGNETICS/SUNOKILLER",
-      "title": "Review/merge PR #4: Build sovereign runtime boundary and OMEN mastering harness",
+      "title": "Review approval gate PR #4: Build sovereign runtime boundary and OMEN mastering harness",
       "url": "https://github.com/MASSIVEMAGNETICS/SUNOKILLER/pull/4"
     },
     {
-      "kind": "review_pr",
+      "kind": "review_pr_draft",
       "priority": "P0",
-      "reason": "Open pull requests are the shortest path from work-in-progress to MERGED/SHIPPED.",
+      "reason": "GitHub marks the pull request as draft.",
       "repo": "MASSIVEMAGNETICS/victorOS",
-      "title": "Review/merge PR #12: Android: add live governed God\u2019s Eye camera preview",
+      "title": "Review draft PR #12: Android: add live governed God\u2019s Eye camera preview",
       "url": "https://github.com/MASSIVEMAGNETICS/victorOS/pull/12"
     },
     {
-      "kind": "review_pr",
+      "kind": "review_pr_draft",
       "priority": "P0",
-      "reason": "Open pull requests are the shortest path from work-in-progress to MERGED/SHIPPED.",
-      "repo": "MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler",
-      "title": "Review/merge PR #2: Guard Empire PR routing against draft/donor merge recommendations",
-      "url": "https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler/pull/2"
-    },
-    {
-      "kind": "review_pr",
-      "priority": "P0",
-      "reason": "Open pull requests are the shortest path from work-in-progress to MERGED/SHIPPED.",
+      "reason": "GitHub marks the pull request as draft.",
       "repo": "MASSIVEMAGNETICS/dev-ville",
-      "title": "Review/merge PR #19: Add secure browser admin sessions for iambandobandz.com",
+      "title": "Review draft PR #19: Add secure browser admin sessions for iambandobandz.com",
       "url": "https://github.com/MASSIVEMAGNETICS/dev-ville/pull/19"
     },
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 69 days.",
+      "reason": "Canonical repo has not been pushed in 70 days.",
       "repo": "MASSIVEMAGNETICS/victor-whole",
       "title": "Triage stale canonical repo: victor-whole",
       "url": "https://github.com/MASSIVEMAGNETICS/victor-whole"
@@ -59,7 +59,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 156 days.",
+      "reason": "Canonical repo has not been pushed in 157 days.",
       "repo": "MASSIVEMAGNETICS/repo-brain",
       "title": "Triage stale canonical repo: repo-brain",
       "url": "https://github.com/MASSIVEMAGNETICS/repo-brain"
@@ -83,7 +83,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 82 days.",
+      "reason": "Canonical repo has not been pushed in 83 days.",
       "repo": "MASSIVEMAGNETICS/massive_starpower",
       "title": "Triage stale canonical repo: massive_starpower",
       "url": "https://github.com/MASSIVEMAGNETICS/massive_starpower"
@@ -120,12 +120,12 @@
     },
     {
       "active_14d": 7,
-      "attention_sum": 2498,
+      "attention_sum": 2486,
       "canonical_count": 5,
       "id": "victor_core",
       "name": "Victor Authority + Continuity",
       "open_issues_estimate": 1,
-      "open_prs": 35,
+      "open_prs": 34,
       "priority": 10,
       "repo_count": 88
     },
@@ -175,7 +175,7 @@
     },
     {
       "active_14d": 0,
-      "attention_sum": 514,
+      "attention_sum": 509,
       "canonical_count": 3,
       "id": "frontier_rnd",
       "name": "Massive Magnetics Frontier R&D",
@@ -186,7 +186,7 @@
     },
     {
       "active_14d": 1,
-      "attention_sum": 1637,
+      "attention_sum": 1630,
       "canonical_count": 0,
       "id": "supporting_lattice",
       "name": "Supporting Lattice",
@@ -270,7 +270,7 @@
       "updated_at": "2026-07-30T22:29:19Z"
     },
     {
-      "age_days": 181,
+      "age_days": 182,
       "archived": false,
       "attention_score": 23,
       "canonical": false,
@@ -294,7 +294,7 @@
       "updated_at": "2026-07-31T02:54:47Z"
     },
     {
-      "age_days": 176,
+      "age_days": 177,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -438,7 +438,7 @@
       "updated_at": "2026-07-31T03:40:38Z"
     },
     {
-      "age_days": 286,
+      "age_days": 287,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -462,7 +462,7 @@
       "updated_at": "2026-07-29T23:09:05Z"
     },
     {
-      "age_days": 448,
+      "age_days": 449,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -606,7 +606,7 @@
       "updated_at": "2025-07-30T00:53:26Z"
     },
     {
-      "age_days": 113,
+      "age_days": 114,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -654,7 +654,7 @@
       "updated_at": "2026-07-31T03:15:26Z"
     },
     {
-      "age_days": 175,
+      "age_days": 176,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -702,7 +702,7 @@
       "updated_at": "2026-07-30T04:38:41Z"
     },
     {
-      "age_days": 1640,
+      "age_days": 1641,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -750,7 +750,7 @@
       "updated_at": "2026-01-14T12:01:17Z"
     },
     {
-      "age_days": 764,
+      "age_days": 765,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -774,7 +774,7 @@
       "updated_at": "2026-01-13T15:59:45Z"
     },
     {
-      "age_days": 257,
+      "age_days": 258,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -822,7 +822,7 @@
       "updated_at": "2025-11-24T03:39:40Z"
     },
     {
-      "age_days": 336,
+      "age_days": 337,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -870,7 +870,7 @@
       "updated_at": "2025-07-16T08:53:32Z"
     },
     {
-      "age_days": 434,
+      "age_days": 435,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -894,7 +894,7 @@
       "updated_at": "2025-06-28T19:33:00Z"
     },
     {
-      "age_days": 206,
+      "age_days": 207,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -918,7 +918,7 @@
       "updated_at": "2026-01-13T15:45:18Z"
     },
     {
-      "age_days": 241,
+      "age_days": 242,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -942,7 +942,7 @@
       "updated_at": "2026-07-31T04:01:43Z"
     },
     {
-      "age_days": 373,
+      "age_days": 374,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1014,7 +1014,7 @@
       "updated_at": "2026-01-21T20:27:43Z"
     },
     {
-      "age_days": 415,
+      "age_days": 416,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1038,7 +1038,7 @@
       "updated_at": "2025-07-18T13:15:30Z"
     },
     {
-      "age_days": 202,
+      "age_days": 203,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -1062,7 +1062,7 @@
       "updated_at": "2026-07-31T03:12:17Z"
     },
     {
-      "age_days": 194,
+      "age_days": 195,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1110,7 +1110,7 @@
       "updated_at": "2026-03-09T06:54:07Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1134,7 +1134,7 @@
       "updated_at": "2026-07-31T00:21:09Z"
     },
     {
-      "age_days": 288,
+      "age_days": 289,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1158,7 +1158,7 @@
       "updated_at": "2025-11-21T18:20:33Z"
     },
     {
-      "age_days": 434,
+      "age_days": 435,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1230,7 +1230,7 @@
       "updated_at": "2026-08-04T12:47:28Z"
     },
     {
-      "age_days": 417,
+      "age_days": 418,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1302,7 +1302,7 @@
       "updated_at": "2026-05-16T13:43:13Z"
     },
     {
-      "age_days": 177,
+      "age_days": 178,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1374,7 +1374,7 @@
       "updated_at": "2025-06-22T02:09:44Z"
     },
     {
-      "age_days": 357,
+      "age_days": 358,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1398,7 +1398,7 @@
       "updated_at": "2026-01-07T04:38:05Z"
     },
     {
-      "age_days": 149,
+      "age_days": 150,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1446,7 +1446,7 @@
       "updated_at": "2026-07-31T01:30:18Z"
     },
     {
-      "age_days": 323,
+      "age_days": 324,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1494,7 +1494,7 @@
       "updated_at": "2025-06-29T03:43:01Z"
     },
     {
-      "age_days": 229,
+      "age_days": 230,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1590,7 +1590,7 @@
       "updated_at": "2025-06-23T16:27:55Z"
     },
     {
-      "age_days": 843,
+      "age_days": 844,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1662,7 +1662,7 @@
       "updated_at": "2026-09-05T10:54:12Z"
     },
     {
-      "age_days": 191,
+      "age_days": 192,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -1686,7 +1686,7 @@
       "updated_at": "2026-03-09T06:54:33Z"
     },
     {
-      "age_days": 181,
+      "age_days": 182,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1734,7 +1734,7 @@
       "updated_at": "2025-11-24T15:11:51Z"
     },
     {
-      "age_days": 392,
+      "age_days": 393,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1782,7 +1782,7 @@
       "updated_at": "2026-07-30T23:04:59Z"
     },
     {
-      "age_days": 148,
+      "age_days": 149,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -1830,7 +1830,7 @@
       "updated_at": "2026-01-20T13:04:01Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1902,7 +1902,7 @@
       "updated_at": "2025-10-19T08:51:13Z"
     },
     {
-      "age_days": 192,
+      "age_days": 193,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -1926,7 +1926,7 @@
       "updated_at": "2026-07-31T03:10:14Z"
     },
     {
-      "age_days": 286,
+      "age_days": 287,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -1998,9 +1998,9 @@
       "updated_at": "2026-07-30T04:01:22Z"
     },
     {
-      "age_days": 90,
+      "age_days": 91,
       "archived": false,
-      "attention_score": 31,
+      "attention_score": 26,
       "canonical": true,
       "default_branch": "main",
       "description": "Fractal Topological Intelligence Persistent Homology - Omniverse Pattern Weaver topological intelligence engine. Victor Sovereign integration.",
@@ -2118,7 +2118,7 @@
       "updated_at": "2026-01-14T15:08:51Z"
     },
     {
-      "age_days": 260,
+      "age_days": 261,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2166,7 +2166,7 @@
       "updated_at": "2026-01-08T14:07:30Z"
     },
     {
-      "age_days": 434,
+      "age_days": 435,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2214,7 +2214,7 @@
       "updated_at": "2026-08-09T21:09:52Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2358,7 +2358,7 @@
       "updated_at": "2025-10-19T07:35:40Z"
     },
     {
-      "age_days": 341,
+      "age_days": 342,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2406,7 +2406,7 @@
       "updated_at": "2026-07-30T23:00:03Z"
     },
     {
-      "age_days": 156,
+      "age_days": 157,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2430,7 +2430,7 @@
       "updated_at": "2026-07-31T00:32:14Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 26,
       "canonical": true,
@@ -2454,7 +2454,7 @@
       "updated_at": "2026-08-27T21:48:43Z"
     },
     {
-      "age_days": 183,
+      "age_days": 184,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2502,7 +2502,7 @@
       "updated_at": "2026-01-22T13:55:39Z"
     },
     {
-      "age_days": 101,
+      "age_days": 102,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -2598,7 +2598,7 @@
       "updated_at": "2025-11-30T04:03:34Z"
     },
     {
-      "age_days": 420,
+      "age_days": 421,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2718,7 +2718,7 @@
       "updated_at": "2026-07-31T02:53:23Z"
     },
     {
-      "age_days": 403,
+      "age_days": 404,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2742,7 +2742,7 @@
       "updated_at": "2025-07-28T15:06:40Z"
     },
     {
-      "age_days": 431,
+      "age_days": 432,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2790,7 +2790,7 @@
       "updated_at": "2026-08-14T06:43:30Z"
     },
     {
-      "age_days": 639,
+      "age_days": 640,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2838,7 +2838,7 @@
       "updated_at": "2025-12-21T14:48:32Z"
     },
     {
-      "age_days": 404,
+      "age_days": 405,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2886,7 +2886,7 @@
       "updated_at": "2025-11-24T03:36:28Z"
     },
     {
-      "age_days": 153,
+      "age_days": 154,
       "archived": false,
       "attention_score": 26,
       "canonical": true,
@@ -2982,7 +2982,7 @@
       "updated_at": "2026-07-30T04:46:12Z"
     },
     {
-      "age_days": 441,
+      "age_days": 442,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3006,7 +3006,7 @@
       "updated_at": "2025-06-10T06:06:10Z"
     },
     {
-      "age_days": 435,
+      "age_days": 436,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3030,7 +3030,7 @@
       "updated_at": "2025-06-28T16:06:11Z"
     },
     {
-      "age_days": 202,
+      "age_days": 203,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3078,7 +3078,7 @@
       "updated_at": "2026-01-07T12:21:09Z"
     },
     {
-      "age_days": 107,
+      "age_days": 108,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3102,7 +3102,7 @@
       "updated_at": "2026-07-30T22:55:01Z"
     },
     {
-      "age_days": 113,
+      "age_days": 114,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3126,7 +3126,7 @@
       "updated_at": "2026-05-16T00:26:32Z"
     },
     {
-      "age_days": 82,
+      "age_days": 83,
       "archived": false,
       "attention_score": 35,
       "canonical": true,
@@ -3192,13 +3192,13 @@
       "pillar_name": "iambandobandz / Empire Router",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-09-06T15:30:40Z",
-      "size_kb": 3892,
+      "pushed_at": "2026-09-06T23:57:04Z",
+      "size_kb": 3984,
       "stars": 0,
-      "updated_at": "2026-09-06T15:30:46Z"
+      "updated_at": "2026-09-06T20:27:36Z"
     },
     {
-      "age_days": 101,
+      "age_days": 102,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3294,7 +3294,7 @@
       "updated_at": "2025-10-19T07:32:29Z"
     },
     {
-      "age_days": 181,
+      "age_days": 182,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3318,7 +3318,7 @@
       "updated_at": "2026-03-09T06:54:01Z"
     },
     {
-      "age_days": 366,
+      "age_days": 367,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3342,7 +3342,7 @@
       "updated_at": "2026-01-14T15:09:37Z"
     },
     {
-      "age_days": 267,
+      "age_days": 268,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3390,7 +3390,7 @@
       "updated_at": "2026-07-31T03:42:42Z"
     },
     {
-      "age_days": 179,
+      "age_days": 180,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3414,7 +3414,7 @@
       "updated_at": "2026-08-27T21:48:42Z"
     },
     {
-      "age_days": 241,
+      "age_days": 242,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -3486,7 +3486,7 @@
       "updated_at": "2025-10-04T14:45:41Z"
     },
     {
-      "age_days": 33,
+      "age_days": 34,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -3534,7 +3534,7 @@
       "updated_at": "2026-07-31T03:46:07Z"
     },
     {
-      "age_days": 289,
+      "age_days": 290,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3582,7 +3582,7 @@
       "updated_at": "2026-01-08T13:40:47Z"
     },
     {
-      "age_days": 178,
+      "age_days": 179,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -3606,7 +3606,7 @@
       "updated_at": "2026-07-31T01:32:28Z"
     },
     {
-      "age_days": 290,
+      "age_days": 291,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3654,7 +3654,7 @@
       "updated_at": "2026-07-30T04:30:48Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 37,
       "canonical": false,
@@ -3750,7 +3750,7 @@
       "updated_at": "2026-04-05T14:05:25Z"
     },
     {
-      "age_days": 87,
+      "age_days": 88,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3822,7 +3822,7 @@
       "updated_at": "2025-07-15T20:33:59Z"
     },
     {
-      "age_days": 231,
+      "age_days": 232,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3870,7 +3870,7 @@
       "updated_at": "2026-07-30T23:17:04Z"
     },
     {
-      "age_days": 228,
+      "age_days": 229,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3894,7 +3894,7 @@
       "updated_at": "2026-01-20T21:16:26Z"
     },
     {
-      "age_days": 513,
+      "age_days": 514,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3966,7 +3966,7 @@
       "updated_at": "2026-01-13T16:02:20Z"
     },
     {
-      "age_days": 241,
+      "age_days": 242,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -3990,7 +3990,7 @@
       "updated_at": "2026-01-07T20:27:16Z"
     },
     {
-      "age_days": 245,
+      "age_days": 246,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4062,9 +4062,9 @@
       "updated_at": "2026-07-31T03:57:30Z"
     },
     {
-      "age_days": 30,
+      "age_days": 31,
       "archived": false,
-      "attention_score": 22,
+      "attention_score": 15,
       "canonical": false,
       "default_branch": "main",
       "description": "C# Machine Learning Project for Predictive Maintenance using ML.NET.",
@@ -4086,7 +4086,7 @@
       "updated_at": "2026-08-14T03:47:10Z"
     },
     {
-      "age_days": 661,
+      "age_days": 662,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4110,7 +4110,7 @@
       "updated_at": "2025-10-19T07:32:06Z"
     },
     {
-      "age_days": 183,
+      "age_days": 184,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -4182,7 +4182,7 @@
       "updated_at": "2026-07-29T23:25:57Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 24,
       "canonical": false,
@@ -4230,7 +4230,7 @@
       "updated_at": "2026-07-31T03:16:18Z"
     },
     {
-      "age_days": 241,
+      "age_days": 242,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4278,7 +4278,7 @@
       "updated_at": "2025-10-18T13:01:39Z"
     },
     {
-      "age_days": 234,
+      "age_days": 235,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -4326,7 +4326,7 @@
       "updated_at": "2026-08-14T05:02:32Z"
     },
     {
-      "age_days": 382,
+      "age_days": 383,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4446,7 +4446,7 @@
       "updated_at": "2025-06-29T06:11:00Z"
     },
     {
-      "age_days": 351,
+      "age_days": 352,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4470,7 +4470,7 @@
       "updated_at": "2025-11-01T06:09:13Z"
     },
     {
-      "age_days": 156,
+      "age_days": 157,
       "archived": false,
       "attention_score": 30,
       "canonical": true,
@@ -4494,7 +4494,7 @@
       "updated_at": "2026-07-31T00:33:46Z"
     },
     {
-      "age_days": 75,
+      "age_days": 76,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -4518,7 +4518,7 @@
       "updated_at": "2026-07-30T04:45:30Z"
     },
     {
-      "age_days": 87,
+      "age_days": 88,
       "archived": false,
       "attention_score": 21,
       "canonical": false,
@@ -4542,7 +4542,7 @@
       "updated_at": "2026-07-30T22:17:43Z"
     },
     {
-      "age_days": 1104,
+      "age_days": 1105,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4590,7 +4590,7 @@
       "updated_at": "2026-01-14T12:01:06Z"
     },
     {
-      "age_days": 151,
+      "age_days": 152,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4614,7 +4614,7 @@
       "updated_at": "2026-07-31T00:26:06Z"
     },
     {
-      "age_days": 322,
+      "age_days": 323,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4686,7 +4686,7 @@
       "updated_at": "2026-08-14T01:15:34Z"
     },
     {
-      "age_days": 114,
+      "age_days": 115,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -4830,7 +4830,7 @@
       "updated_at": "2026-07-30T21:57:46Z"
     },
     {
-      "age_days": 328,
+      "age_days": 329,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5040,8 +5040,8 @@
       "pillar_name": "Music + Catalog Engine",
       "pillar_priority": 9,
       "private": false,
-      "pushed_at": "2026-09-06T15:47:17Z",
-      "size_kb": 1923,
+      "pushed_at": "2026-09-06T20:53:00Z",
+      "size_kb": 1925,
       "stars": 0,
       "updated_at": "2026-08-26T18:15:32Z"
     },
@@ -5142,7 +5142,7 @@
       "updated_at": "2026-08-09T21:11:40Z"
     },
     {
-      "age_days": 251,
+      "age_days": 252,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5166,7 +5166,7 @@
       "updated_at": "2025-12-22T20:37:11Z"
     },
     {
-      "age_days": 53,
+      "age_days": 54,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -5214,7 +5214,7 @@
       "updated_at": "2025-07-26T02:41:33Z"
     },
     {
-      "age_days": 2355,
+      "age_days": 2356,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -5262,7 +5262,7 @@
       "updated_at": "2025-07-17T18:03:21Z"
     },
     {
-      "age_days": 420,
+      "age_days": 421,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5382,7 +5382,7 @@
       "updated_at": "2025-11-30T04:09:56Z"
     },
     {
-      "age_days": 20,
+      "age_days": 21,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5406,7 +5406,7 @@
       "updated_at": "2026-08-16T23:42:12Z"
     },
     {
-      "age_days": 251,
+      "age_days": 252,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5430,7 +5430,7 @@
       "updated_at": "2025-07-11T20:23:17Z"
     },
     {
-      "age_days": 217,
+      "age_days": 218,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5670,7 +5670,7 @@
       "updated_at": "2026-07-30T22:01:25Z"
     },
     {
-      "age_days": 288,
+      "age_days": 289,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5718,7 +5718,7 @@
       "updated_at": "2026-07-31T00:37:48Z"
     },
     {
-      "age_days": 195,
+      "age_days": 196,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5766,7 +5766,7 @@
       "updated_at": "2026-07-31T03:33:42Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 36,
       "canonical": false,
@@ -5790,7 +5790,7 @@
       "updated_at": "2026-07-31T00:12:37Z"
     },
     {
-      "age_days": 11,
+      "age_days": 12,
       "archived": false,
       "attention_score": 47,
       "canonical": false,
@@ -5934,7 +5934,7 @@
       "updated_at": "2026-07-30T23:13:33Z"
     },
     {
-      "age_days": 182,
+      "age_days": 183,
       "archived": false,
       "attention_score": 29,
       "canonical": false,
@@ -5958,7 +5958,7 @@
       "updated_at": "2026-03-09T06:54:04Z"
     },
     {
-      "age_days": 372,
+      "age_days": 373,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6006,7 +6006,7 @@
       "updated_at": "2025-08-29T22:58:04Z"
     },
     {
-      "age_days": 11,
+      "age_days": 12,
       "archived": false,
       "attention_score": 40,
       "canonical": false,
@@ -6174,7 +6174,7 @@
       "updated_at": "2026-07-30T22:02:27Z"
     },
     {
-      "age_days": 217,
+      "age_days": 218,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6294,7 +6294,7 @@
       "updated_at": "2026-07-30T22:35:53Z"
     },
     {
-      "age_days": 69,
+      "age_days": 70,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -6318,7 +6318,7 @@
       "updated_at": "2026-07-30T04:25:34Z"
     },
     {
-      "age_days": 114,
+      "age_days": 115,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6486,7 +6486,7 @@
       "updated_at": "2026-08-09T00:11:20Z"
     },
     {
-      "age_days": 290,
+      "age_days": 291,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6534,7 +6534,7 @@
       "updated_at": "2026-07-30T22:59:25Z"
     },
     {
-      "age_days": 87,
+      "age_days": 88,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -6558,7 +6558,7 @@
       "updated_at": "2026-07-30T22:15:34Z"
     },
     {
-      "age_days": 20,
+      "age_days": 21,
       "archived": false,
       "attention_score": 34,
       "canonical": false,
@@ -6584,7 +6584,7 @@
     {
       "age_days": 0,
       "archived": false,
-      "attention_score": 62,
+      "attention_score": 55,
       "canonical": true,
       "default_branch": "main",
       "description": "Victor Sovereign Puzzle Assembler \u2014 Modular, bloodline-locked, self-assembling sovereign intelligence. Each script is a puzzle piece. When assembled, Victor emerges. Automated. Autonomously. Built from the MASSIVEMAGNETICS lattice.",
@@ -6594,16 +6594,16 @@
       "html_url": "https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler",
       "name": "victor-sovereign-puzzle-assembler",
       "open_issues_estimate": 0,
-      "open_items": 1,
-      "open_prs": 1,
+      "open_items": 0,
+      "open_prs": 0,
       "pillar_id": "victor_core",
       "pillar_name": "Victor Authority + Continuity",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-09-05T23:20:22Z",
-      "size_kb": 162,
+      "pushed_at": "2026-09-07T00:46:36Z",
+      "size_kb": 169,
       "stars": 2,
-      "updated_at": "2026-09-05T16:05:24Z"
+      "updated_at": "2026-09-07T00:46:40Z"
     },
     {
       "age_days": 37,
@@ -6774,7 +6774,7 @@
       "updated_at": "2026-07-30T04:22:28Z"
     },
     {
-      "age_days": 69,
+      "age_days": 70,
       "archived": false,
       "attention_score": 37,
       "canonical": true,
@@ -6798,7 +6798,7 @@
       "updated_at": "2026-07-30T04:23:32Z"
     },
     {
-      "age_days": 283,
+      "age_days": 284,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6822,9 +6822,9 @@
       "updated_at": "2025-11-26T19:42:06Z"
     },
     {
-      "age_days": 3,
+      "age_days": 4,
       "archived": false,
-      "attention_score": 66,
+      "attention_score": 61,
       "canonical": false,
       "default_branch": "main",
       "description": "empire builder",
@@ -6966,7 +6966,7 @@
       "updated_at": "2026-09-05T10:40:52Z"
     },
     {
-      "age_days": 113,
+      "age_days": 114,
       "archived": false,
       "attention_score": 29,
       "canonical": false,
@@ -6990,7 +6990,7 @@
       "updated_at": "2026-07-30T23:12:10Z"
     },
     {
-      "age_days": 286,
+      "age_days": 287,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7014,7 +7014,7 @@
       "updated_at": "2025-11-26T13:02:50Z"
     },
     {
-      "age_days": 1,
+      "age_days": 2,
       "archived": false,
       "attention_score": 80,
       "canonical": true,
@@ -7086,7 +7086,7 @@
       "updated_at": "2025-09-12T08:26:50Z"
     },
     {
-      "age_days": 449,
+      "age_days": 450,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7110,7 +7110,7 @@
       "updated_at": "2025-06-13T20:30:13Z"
     },
     {
-      "age_days": 149,
+      "age_days": 150,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -7182,7 +7182,7 @@
       "updated_at": "2025-11-30T01:55:12Z"
     },
     {
-      "age_days": 552,
+      "age_days": 553,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -7302,7 +7302,7 @@
       "updated_at": "2026-03-09T15:01:21Z"
     },
     {
-      "age_days": 244,
+      "age_days": 245,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -7332,7 +7332,7 @@
     "archived": 0,
     "canonical_visible": 16,
     "open_issues_estimate": 5,
-    "open_prs": 67,
+    "open_prs": 66,
     "private_visible": 0,
     "visible_repositories": 297
   },
@@ -7345,7 +7345,7 @@
   ],
   "top_attention": [
     {
-      "age_days": 1,
+      "age_days": 2,
       "archived": false,
       "attention_score": 80,
       "canonical": true,
@@ -7387,10 +7387,10 @@
       "pillar_name": "iambandobandz / Empire Router",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-09-06T15:30:40Z",
-      "size_kb": 3892,
+      "pushed_at": "2026-09-06T23:57:04Z",
+      "size_kb": 3984,
       "stars": 0,
-      "updated_at": "2026-09-06T15:30:46Z"
+      "updated_at": "2026-09-06T20:27:36Z"
     },
     {
       "age_days": 0,
@@ -7441,30 +7441,6 @@
       "updated_at": "2026-09-05T10:54:12Z"
     },
     {
-      "age_days": 3,
-      "archived": false,
-      "attention_score": 66,
-      "canonical": false,
-      "default_branch": "main",
-      "description": "empire builder",
-      "fork": false,
-      "forks": 0,
-      "full_name": "MASSIVEMAGNETICS/victor_empire",
-      "html_url": "https://github.com/MASSIVEMAGNETICS/victor_empire",
-      "name": "victor_empire",
-      "open_issues_estimate": 0,
-      "open_items": 3,
-      "open_prs": 3,
-      "pillar_id": "victor_core",
-      "pillar_name": "Victor Authority + Continuity",
-      "pillar_priority": 10,
-      "private": false,
-      "pushed_at": "2026-09-02T23:26:52Z",
-      "size_kb": 114,
-      "stars": 0,
-      "updated_at": "2026-08-10T20:07:44Z"
-    },
-    {
       "age_days": 13,
       "archived": false,
       "attention_score": 65,
@@ -7489,9 +7465,33 @@
       "updated_at": "2026-08-24T14:48:12Z"
     },
     {
+      "age_days": 4,
+      "archived": false,
+      "attention_score": 61,
+      "canonical": false,
+      "default_branch": "main",
+      "description": "empire builder",
+      "fork": false,
+      "forks": 0,
+      "full_name": "MASSIVEMAGNETICS/victor_empire",
+      "html_url": "https://github.com/MASSIVEMAGNETICS/victor_empire",
+      "name": "victor_empire",
+      "open_issues_estimate": 0,
+      "open_items": 3,
+      "open_prs": 3,
+      "pillar_id": "victor_core",
+      "pillar_name": "Victor Authority + Continuity",
+      "pillar_priority": 10,
+      "private": false,
+      "pushed_at": "2026-09-02T23:26:52Z",
+      "size_kb": 114,
+      "stars": 0,
+      "updated_at": "2026-08-10T20:07:44Z"
+    },
+    {
       "age_days": 0,
       "archived": false,
-      "attention_score": 62,
+      "attention_score": 55,
       "canonical": true,
       "default_branch": "main",
       "description": "Victor Sovereign Puzzle Assembler \u2014 Modular, bloodline-locked, self-assembling sovereign intelligence. Each script is a puzzle piece. When assembled, Victor emerges. Automated. Autonomously. Built from the MASSIVEMAGNETICS lattice.",
@@ -7501,16 +7501,16 @@
       "html_url": "https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler",
       "name": "victor-sovereign-puzzle-assembler",
       "open_issues_estimate": 0,
-      "open_items": 1,
-      "open_prs": 1,
+      "open_items": 0,
+      "open_prs": 0,
       "pillar_id": "victor_core",
       "pillar_name": "Victor Authority + Continuity",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-09-05T23:20:22Z",
-      "size_kb": 162,
+      "pushed_at": "2026-09-07T00:46:36Z",
+      "size_kb": 169,
       "stars": 2,
-      "updated_at": "2026-09-05T16:05:24Z"
+      "updated_at": "2026-09-07T00:46:40Z"
     },
     {
       "age_days": 59,
@@ -7555,8 +7555,8 @@
       "pillar_name": "Music + Catalog Engine",
       "pillar_priority": 9,
       "private": false,
-      "pushed_at": "2026-09-06T15:47:17Z",
-      "size_kb": 1923,
+      "pushed_at": "2026-09-06T20:53:00Z",
+      "size_kb": 1925,
       "stars": 0,
       "updated_at": "2026-08-26T18:15:32Z"
     },
@@ -7609,7 +7609,7 @@
       "updated_at": "2026-07-30T22:00:26Z"
     },
     {
-      "age_days": 11,
+      "age_days": 12,
       "archived": false,
       "attention_score": 47,
       "canonical": false,
