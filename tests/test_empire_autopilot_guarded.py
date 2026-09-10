@@ -136,6 +136,75 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             guarded._ORIGINAL_BUILD_STATE = original
 
         self.assertEqual(state["receipt_generator"], "empire_autopilot_guarded.py")
+        self.assertTrue(state["private_inventory_complete"])
+
+    def test_private_inventory_failure_qualifies_unseen_canonical_repo(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        raw_error = (
+            'GitHub API 403 for https://api.github.com/user/repos?affiliation=owner&visibility=all: '
+            '{"message":"Resource not accessible by integration"}'
+        )
+        base_state = {
+            "api_errors": [raw_error],
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "priority": "P1",
+                    "repo": "MASSIVEMAGNETICS/suno-killer",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/suno-killer",
+                    "reason": "Manifest expects this repo but the current scan could not see it.",
+                    "url": None,
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertFalse(state["private_inventory_complete"])
+        self.assertEqual(state["next_actions"][0]["kind"], "recover_canonical_repo")
+        self.assertEqual(
+            state["next_actions"][0]["title"],
+            "Resolve unseen canonical repo: MASSIVEMAGNETICS/suno-killer",
+        )
+        self.assertIn("private inventory coverage is incomplete", state["next_actions"][0]["reason"])
+        self.assertNotIn("missing canonical repo", state["next_actions"][0]["title"].lower())
+
+    def test_complete_private_inventory_preserves_missing_canonical_wording(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        base_state = {
+            "api_errors": [],
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "repo": "MASSIVEMAGNETICS/actually-missing",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/actually-missing",
+                    "reason": "Manifest expects this repo but the current scan could not see it.",
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertTrue(state["private_inventory_complete"])
+        self.assertIn("Resolve missing canonical repo", state["next_actions"][0]["title"])
+
+    def test_private_inventory_qualification_preserves_non_recovery_actions(self):
+        state = {
+            "api_errors": ["GitHub API 403 for https://api.github.com/user/repos: denied"],
+            "next_actions": [
+                {"kind": "review_pr_draft", "title": "Review draft PR #1"},
+                {"kind": "triage_stale_canonical", "title": "Triage stale canonical repo"},
+            ],
+        }
+        original_actions = [dict(action) for action in state["next_actions"]]
+        guarded._qualify_unseen_canonical_actions(state)
+        self.assertEqual(state["next_actions"], original_actions)
 
     def test_compact_api_error_preserves_http_status_endpoint_and_message(self):
         raw = (
