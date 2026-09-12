@@ -159,6 +159,29 @@ A repository should remain in the Supporting Lattice until it earns promotion by
 
 Everything else should ultimately become **MERGED, ARCHIVED, or KILLED** instead of remaining immortal repo clutter.
 
+## Evidence-Bounded Music Lineage
+
+The similarly named `suno-killer` and `SUNOKILLER` repositories are separate evidence objects and must not be collapsed solely because public inventory sees only one of them.
+
+| Repository | Verified repository evidence | Current role classification |
+|---|---|---|
+| `MASSIVEMAGNETICS/suno-killer` | Private repository. README identifies it as **Victor AGI OmniMind Godcore**, a monolithic experimental Victor/AGI testbed containing audio-generation modules alongside broader cognition, memory, orchestration, and several explicitly conceptual/stubbed self-evolution loops. | Historical / donor / experimental lineage candidate. **Do not infer deletion or obsolescence from public-scan absence.** |
+| `MASSIVEMAGNETICS/SUNOKILLER` | Public repository focused on local audio synthesis. Active review work includes a fail-closed sovereign runtime/OMEN boundary with explicit human promotion gates. | Active Music Engine implementation candidate. Production readiness and canonical promotion remain separately verified decisions. |
+
+### Canonical-role rule
+
+Repository visibility is evidence about what a scan can observe, not evidence about whether a repository exists or which implementation should replace another.
+
+Therefore:
+
+1. An incomplete private inventory must label an unseen canonical repository as **unseen/unknown**, not nonexistent.
+2. `suno-killer` must not be replaced by `SUNOKILLER` merely to silence an inventory warning.
+3. Canonical promotion requires an explicit role decision: active implementation, donor lineage, historical evidence, or retirement.
+4. Multiple repositories may remain in the lineage graph while only one owns a given active capability.
+5. A role decision must preserve provenance links so useful code or prior evidence is not lost when an implementation is superseded.
+
+This distinction is intentionally architectural, not cosmetic: the Empire needs one owner per active capability without rewriting its history.
+
 ## Highest-Leverage Architecture Change
 
 Do not build another omnirepo yet.
