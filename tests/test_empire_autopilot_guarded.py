@@ -124,8 +124,94 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             guarded._ORIGINAL_SEARCH_OPEN_PRS = original_search
 
         self.assertTrue(enriched[0]["draft"])
+        self.assertTrue(enriched[0][guarded._AUTHORITATIVE_PR_METADATA])
         self.assertEqual(enriched[0]["title"], "DRAFT DONOR: authoritative title")
         self.assertEqual(api.paths, ["/repos/MASSIVEMAGNETICS/victorOS/pulls/4"])
+
+    def test_enrichment_failure_suppresses_merge_candidate(self):
+        original_search = guarded._ORIGINAL_SEARCH_OPEN_PRS
+
+        class FailingAPI:
+            def get_json(self, path):
+                raise guarded.base.GitHubAPIError("forced enrichment failure")
+
+        search_item = {
+            "repository_url": "https://api.github.com/repos/MASSIVEMAGNETICS/hidden-draft",
+            "number": 9,
+            "title": "Add runtime mutation",
+            "html_url": "https://github.com/MASSIVEMAGNETICS/hidden-draft/pull/9",
+        }
+        try:
+            guarded._ORIGINAL_SEARCH_OPEN_PRS = lambda api, owner: [search_item]
+            enriched = guarded.search_open_prs_enriched(FailingAPI(), "MASSIVEMAGNETICS")
+            actions = guarded.build_next_actions_guarded([], enriched, self.manifest)
+        finally:
+            guarded._ORIGINAL_SEARCH_OPEN_PRS = original_search
+
+        self.assertFalse(enriched[0][guarded._AUTHORITATIVE_PR_METADATA])
+        self.assertEqual(actions[0]["kind"], "review_pr_unknown")
+        self.assertIn("metadata was unavailable", actions[0]["reason"])
+        self.assertNotIn("merge candidate", actions[0]["title"].lower())
+
+    def test_incomplete_enrichment_payload_suppresses_merge_candidate(self):
+        original_search = guarded._ORIGINAL_SEARCH_OPEN_PRS
+
+        class IncompleteAPI:
+            def get_json(self, path):
+                return {
+                    "draft": False,
+                    "title": "Apparently ready",
+                    # Missing body means approval/donor markers are not observable.
+                    "html_url": "https://github.com/MASSIVEMAGNETICS/incomplete/pull/10",
+                    "state": "open",
+                }
+
+        search_item = {
+            "repository_url": "https://api.github.com/repos/MASSIVEMAGNETICS/incomplete",
+            "number": 10,
+            "title": "Apparently ready",
+            "html_url": "https://github.com/MASSIVEMAGNETICS/incomplete/pull/10",
+        }
+        try:
+            guarded._ORIGINAL_SEARCH_OPEN_PRS = lambda api, owner: [search_item]
+            enriched = guarded.search_open_prs_enriched(IncompleteAPI(), "MASSIVEMAGNETICS")
+            actions = guarded.build_next_actions_guarded([], enriched, self.manifest)
+        finally:
+            guarded._ORIGINAL_SEARCH_OPEN_PRS = original_search
+
+        self.assertFalse(enriched[0][guarded._AUTHORITATIVE_PR_METADATA])
+        self.assertEqual(actions[0]["kind"], "review_pr_unknown")
+        self.assertIn("metadata was unavailable or incomplete", actions[0]["reason"])
+
+    def test_non_open_authoritative_payload_suppresses_merge_candidate(self):
+        original_search = guarded._ORIGINAL_SEARCH_OPEN_PRS
+
+        class ClosedAPI:
+            def get_json(self, path):
+                return {
+                    "draft": False,
+                    "title": "Closed while inventory was running",
+                    "body": "",
+                    "html_url": "https://github.com/MASSIVEMAGNETICS/closed/pull/11",
+                    "state": "closed",
+                }
+
+        search_item = {
+            "repository_url": "https://api.github.com/repos/MASSIVEMAGNETICS/closed",
+            "number": 11,
+            "title": "Previously open",
+            "html_url": "https://github.com/MASSIVEMAGNETICS/closed/pull/11",
+        }
+        try:
+            guarded._ORIGINAL_SEARCH_OPEN_PRS = lambda api, owner: [search_item]
+            enriched = guarded.search_open_prs_enriched(ClosedAPI(), "MASSIVEMAGNETICS")
+            actions = guarded.build_next_actions_guarded([], enriched, self.manifest)
+        finally:
+            guarded._ORIGINAL_SEARCH_OPEN_PRS = original_search
+
+        self.assertFalse(enriched[0][guarded._AUTHORITATIVE_PR_METADATA])
+        self.assertEqual(actions[0]["kind"], "review_pr_unknown")
+        self.assertNotIn("merge candidate", actions[0]["title"].lower())
 
     def test_guarded_state_stamps_actual_receipt_generator(self):
         original = guarded._ORIGINAL_BUILD_STATE
