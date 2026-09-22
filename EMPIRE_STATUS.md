@@ -1,6 +1,6 @@
 # Empire Status
 
-**Generated:** 2026-09-21T18:43:06.224836+00:00  
+**Generated:** 2026-09-22T17:38:36.150617+00:00  
 **Owner:** `MASSIVEMAGNETICS`  
 **Mode:** `observe-plan-assemble-local`
 
@@ -42,35 +42,35 @@ The attention score is a routing heuristic, not a quality score. It combines str
 | Score | Repository | Pillar | Age | PRs | ~Issues |
 |---:|---|---|---:|---:|---:|
 | 75 | [MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io) | iambandobandz / Empire Router | 0d | 2 | 3 |
-| 69 | [MASSIVEMAGNETICS/victorOS](https://github.com/MASSIVEMAGNETICS/victorOS) | Victor Authority + Continuity | 0d | 2 | 0 |
-| 69 | [MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler](https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler) | Victor Authority + Continuity | 1d | 2 | 0 |
-| 67 | [MASSIVEMAGNETICS/victor_empire](https://github.com/MASSIVEMAGNETICS/victor_empire) | Victor Authority + Continuity | 6d | 4 | 1 |
-| 59 | [MASSIVEMAGNETICS/VICTOR-SSI](https://github.com/MASSIVEMAGNETICS/VICTOR-SSI) | Victor Authority + Continuity | 28d | 11 | 0 |
-| 58 | [MASSIVEMAGNETICS/omni](https://github.com/MASSIVEMAGNETICS/omni) | Victor Authority + Continuity | 15d | 2 | 0 |
-| 52 | [MASSIVEMAGNETICS/victor_llm](https://github.com/MASSIVEMAGNETICS/victor_llm) | Victor Authority + Continuity | 74d | 5 | 0 |
+| 69 | [MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler](https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler) | Victor Authority + Continuity | 0d | 2 | 0 |
+| 69 | [MASSIVEMAGNETICS/victorOS](https://github.com/MASSIVEMAGNETICS/victorOS) | Victor Authority + Continuity | 1d | 2 | 0 |
+| 67 | [MASSIVEMAGNETICS/victor_empire](https://github.com/MASSIVEMAGNETICS/victor_empire) | Victor Authority + Continuity | 7d | 4 | 1 |
+| 59 | [MASSIVEMAGNETICS/VICTOR-SSI](https://github.com/MASSIVEMAGNETICS/VICTOR-SSI) | Victor Authority + Continuity | 29d | 11 | 0 |
+| 58 | [MASSIVEMAGNETICS/omni](https://github.com/MASSIVEMAGNETICS/omni) | Victor Authority + Continuity | 16d | 2 | 0 |
+| 52 | [MASSIVEMAGNETICS/victor_llm](https://github.com/MASSIVEMAGNETICS/victor_llm) | Victor Authority + Continuity | 75d | 5 | 0 |
 | 50 | [MASSIVEMAGNETICS/starpower-core](https://github.com/MASSIVEMAGNETICS/starpower-core) | Music + Catalog Engine | 0d | 1 | 0 |
-| 50 | [MASSIVEMAGNETICS/dev-ville](https://github.com/MASSIVEMAGNETICS/dev-ville) | Dev-Ville Execution Layer | 4d | 0 | 1 |
-| 45 | [MASSIVEMAGNETICS/SUNOKILLER](https://github.com/MASSIVEMAGNETICS/SUNOKILLER) | Music + Catalog Engine | 8d | 1 | 0 |
-| 41 | [MASSIVEMAGNETICS/victor](https://github.com/MASSIVEMAGNETICS/victor) | Victor Authority + Continuity | 26d | 1 | 0 |
+| 50 | [MASSIVEMAGNETICS/dev-ville](https://github.com/MASSIVEMAGNETICS/dev-ville) | Dev-Ville Execution Layer | 5d | 0 | 1 |
+| 45 | [MASSIVEMAGNETICS/SUNOKILLER](https://github.com/MASSIVEMAGNETICS/SUNOKILLER) | Music + Catalog Engine | 9d | 1 | 0 |
+| 41 | [MASSIVEMAGNETICS/victor](https://github.com/MASSIVEMAGNETICS/victor) | Victor Authority + Continuity | 27d | 1 | 0 |
 | 40 | [MASSIVEMAGNETICS/shared-intelligence](https://github.com/MASSIVEMAGNETICS/shared-intelligence) | Supporting Lattice | 0d | 1 | 0 |
-| 40 | [MASSIVEMAGNETICS/truth-compiler-ai](https://github.com/MASSIVEMAGNETICS/truth-compiler-ai) | Truth Compiler + Revenue | 12d | 0 | 0 |
-| 39 | [MASSIVEMAGNETICS/suno-clone-mycelial](https://github.com/MASSIVEMAGNETICS/suno-clone-mycelial) | Music + Catalog Engine | 18d | 1 | 0 |
-| 37 | [MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator) | Victor Authority + Continuity | 31d | 0 | 0 |
+| 40 | [MASSIVEMAGNETICS/truth-compiler-ai](https://github.com/MASSIVEMAGNETICS/truth-compiler-ai) | Truth Compiler + Revenue | 13d | 0 | 0 |
+| 39 | [MASSIVEMAGNETICS/suno-clone-mycelial](https://github.com/MASSIVEMAGNETICS/suno-clone-mycelial) | Music + Catalog Engine | 19d | 1 | 0 |
+| 37 | [MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator) | Victor Authority + Continuity | 32d | 0 | 0 |
 
 ## Next Assembly Queue
 
-1. **P0 — [Review draft PR #2: Add BANDO_DRIVER closure-first execution governor](https://github.com/MASSIVEMAGNETICS/shared-intelligence/pull/2)** — GitHub marks the pull request as draft.
-2. **P0 — [Review draft PR #17: Fix closed-loop candidate loss and observation durability](https://github.com/MASSIVEMAGNETICS/victorOS/pull/17)** — GitHub marks the pull request as draft.
-3. **P0 — [Review draft PR #4: Build sovereign runtime boundary and OMEN mastering harness](https://github.com/MASSIVEMAGNETICS/SUNOKILLER/pull/4)** — GitHub marks the pull request as draft.
-4. **P0 — [Review draft PR #4: Stamp guarded Empire receipt provenance](https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler/pull/4)** — GitHub marks the pull request as draft.
-5. **P0 — [Review draft PR #8: Add bounded Empire Autonomy Kernel and B Heard economic sandbox](https://github.com/MASSIVEMAGNETICS/victor_empire/pull/8)** — GitHub marks the pull request as draft.
-6. **P1 — [Triage stale canonical repo: victor-whole](https://github.com/MASSIVEMAGNETICS/victor-whole)** — Canonical repo has not been pushed in 85 days.
-7. **P1 — [Triage stale canonical repo: Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator)** — Canonical repo has not been pushed in 31 days.
+1. **P0 — [Review draft PR #7: Victor v1.1: bounded cognitive ecology + GEV dispatch](https://github.com/MASSIVEMAGNETICS/victor/pull/7)** — GitHub marks the pull request as draft.
+2. **P0 — [Review draft PR #2: Add BANDO_DRIVER closure-first execution governor](https://github.com/MASSIVEMAGNETICS/shared-intelligence/pull/2)** — GitHub marks the pull request as draft.
+3. **P0 — [Review draft PR #17: Fix closed-loop candidate loss and observation durability](https://github.com/MASSIVEMAGNETICS/victorOS/pull/17)** — GitHub marks the pull request as draft.
+4. **P0 — [Review draft PR #4: Build sovereign runtime boundary and OMEN mastering harness](https://github.com/MASSIVEMAGNETICS/SUNOKILLER/pull/4)** — GitHub marks the pull request as draft.
+5. **P0 — [Review draft PR #4: Stamp guarded Empire receipt provenance](https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler/pull/4)** — GitHub marks the pull request as draft.
+6. **P1 — [Triage stale canonical repo: victor-whole](https://github.com/MASSIVEMAGNETICS/victor-whole)** — Canonical repo has not been pushed in 86 days.
+7. **P1 — [Triage stale canonical repo: Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator)** — Canonical repo has not been pushed in 32 days.
 8. **P1 — [Triage stale canonical repo: repo-brain](https://github.com/MASSIVEMAGNETICS/repo-brain)** — Canonical repo has not been pushed in 172 days.
-9. **P1 — [Triage stale canonical repo: victor-os-autodeploy](https://github.com/MASSIVEMAGNETICS/victor-os-autodeploy)** — Canonical repo has not been pushed in 121 days.
+9. **P1 — [Triage stale canonical repo: victor-os-autodeploy](https://github.com/MASSIVEMAGNETICS/victor-os-autodeploy)** — Canonical repo has not been pushed in 122 days.
 10. **P1 — Resolve missing canonical repo: MASSIVEMAGNETICS/suno-killer** — Manifest expects this repo inside Music + Catalog Engine but the current scan could not see it.
-11. **P1 — [Triage stale canonical repo: victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore)** — Canonical repo has not been pushed in 35 days.
-12. **P1 — [Triage stale canonical repo: massive_starpower](https://github.com/MASSIVEMAGNETICS/massive_starpower)** — Canonical repo has not been pushed in 97 days.
+11. **P1 — [Triage stale canonical repo: victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore)** — Canonical repo has not been pushed in 36 days.
+12. **P1 — [Triage stale canonical repo: massive_starpower](https://github.com/MASSIVEMAGNETICS/massive_starpower)** — Canonical repo has not been pushed in 98 days.
 
 ## Coverage Warnings
 
