@@ -1,6 +1,6 @@
 # Empire Status
 
-**Generated:** 2026-10-19T19:20:07.760763+00:00  
+**Generated:** 2026-10-20T17:59:05.944412+00:00  
 **Owner:** `MASSIVEMAGNETICS`  
 **Mode:** `observe-plan-assemble-local`
 
@@ -16,7 +16,7 @@ The daily run observes the lattice, runs Victor's local assembler, writes state,
 |---|---:|
 | Visible repositories | 304 |
 | Canonical repositories visible | 16 |
-| Active in last 14 days | 14 |
+| Active in last 14 days | 13 |
 | Archived | 0 |
 | Private visible | 0 |
 | Open PRs discovered | 66 |
@@ -33,7 +33,7 @@ The daily run observes the lattice, runs Victor's local assembler, writes state,
 | B Heard Network | 0 | 0 | 0 | 0 | 0 |
 | Truth Compiler + Revenue | 5 | 1 | 0 | 0 | 0 |
 | Massive Magnetics Frontier R&D | 25 | 3 | 0 | 5 | 0 |
-| Supporting Lattice | 142 | 0 | 4 | 18 | 0 |
+| Supporting Lattice | 142 | 0 | 3 | 18 | 0 |
 
 ## Highest-Attention Repositories
 
@@ -42,20 +42,20 @@ The attention score is a routing heuristic, not a quality score. It combines str
 | Score | Repository | Pillar | Age | PRs | ~Issues |
 |---:|---|---|---:|---:|---:|
 | 82 | [MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io) | iambandobandz / Empire Router | 0d | 3 | 3 |
-| 71 | [MASSIVEMAGNETICS/victorOS](https://github.com/MASSIVEMAGNETICS/victorOS) | Victor Authority + Continuity | 2d | 2 | 1 |
-| 69 | [MASSIVEMAGNETICS/dev-ville](https://github.com/MASSIVEMAGNETICS/dev-ville) | Dev-Ville Execution Layer | 2d | 2 | 1 |
-| 64 | [MASSIVEMAGNETICS/omni](https://github.com/MASSIVEMAGNETICS/omni) | Victor Authority + Continuity | 11d | 2 | 0 |
-| 62 | [MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler](https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler) | Victor Authority + Continuity | 1d | 1 | 0 |
-| 54 | [MASSIVEMAGNETICS/victor_empire](https://github.com/MASSIVEMAGNETICS/victor_empire) | Victor Authority + Continuity | 34d | 4 | 1 |
-| 52 | [MASSIVEMAGNETICS/VICTOR-SSI](https://github.com/MASSIVEMAGNETICS/VICTOR-SSI) | Victor Authority + Continuity | 56d | 11 | 0 |
+| 71 | [MASSIVEMAGNETICS/victorOS](https://github.com/MASSIVEMAGNETICS/victorOS) | Victor Authority + Continuity | 3d | 2 | 1 |
+| 69 | [MASSIVEMAGNETICS/dev-ville](https://github.com/MASSIVEMAGNETICS/dev-ville) | Dev-Ville Execution Layer | 0d | 2 | 1 |
+| 64 | [MASSIVEMAGNETICS/omni](https://github.com/MASSIVEMAGNETICS/omni) | Victor Authority + Continuity | 12d | 2 | 0 |
+| 62 | [MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler](https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler) | Victor Authority + Continuity | 0d | 1 | 0 |
+| 54 | [MASSIVEMAGNETICS/victor_empire](https://github.com/MASSIVEMAGNETICS/victor_empire) | Victor Authority + Continuity | 35d | 4 | 1 |
+| 52 | [MASSIVEMAGNETICS/VICTOR-SSI](https://github.com/MASSIVEMAGNETICS/VICTOR-SSI) | Victor Authority + Continuity | 57d | 11 | 0 |
 | 50 | [MASSIVEMAGNETICS/starpower-core](https://github.com/MASSIVEMAGNETICS/starpower-core) | Music + Catalog Engine | 0d | 1 | 0 |
-| 47 | [MASSIVEMAGNETICS/victor_llm](https://github.com/MASSIVEMAGNETICS/victor_llm) | Victor Authority + Continuity | 102d | 5 | 0 |
-| 40 | [MASSIVEMAGNETICS/shared-intelligence](https://github.com/MASSIVEMAGNETICS/shared-intelligence) | Supporting Lattice | 0d | 1 | 0 |
-| 40 | [MASSIVEMAGNETICS/caddy-vic](https://github.com/MASSIVEMAGNETICS/caddy-vic) | iambandobandz / Empire Router | 13d | 0 | 0 |
-| 40 | [MASSIVEMAGNETICS/claude-mem-vic](https://github.com/MASSIVEMAGNETICS/claude-mem-vic) | Victor Authority + Continuity | 13d | 0 | 0 |
-| 40 | [MASSIVEMAGNETICS/e2e-vic](https://github.com/MASSIVEMAGNETICS/e2e-vic) | iambandobandz / Empire Router | 13d | 0 | 0 |
+| 47 | [MASSIVEMAGNETICS/victor_llm](https://github.com/MASSIVEMAGNETICS/victor_llm) | Victor Authority + Continuity | 103d | 5 | 0 |
+| 40 | [MASSIVEMAGNETICS/shared-intelligence](https://github.com/MASSIVEMAGNETICS/shared-intelligence) | Supporting Lattice | 1d | 1 | 0 |
+| 40 | [MASSIVEMAGNETICS/caddy-vic](https://github.com/MASSIVEMAGNETICS/caddy-vic) | iambandobandz / Empire Router | 14d | 0 | 0 |
+| 40 | [MASSIVEMAGNETICS/claude-mem-vic](https://github.com/MASSIVEMAGNETICS/claude-mem-vic) | Victor Authority + Continuity | 14d | 0 | 0 |
+| 40 | [MASSIVEMAGNETICS/e2e-vic](https://github.com/MASSIVEMAGNETICS/e2e-vic) | iambandobandz / Empire Router | 14d | 0 | 0 |
 | 38 | [MASSIVEMAGNETICS/VoiceStudio-vic](https://github.com/MASSIVEMAGNETICS/VoiceStudio-vic) | Music + Catalog Engine | 14d | 0 | 0 |
-| 37 | [MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator) | Victor Authority + Continuity | 59d | 0 | 0 |
+| 37 | [MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator) | Victor Authority + Continuity | 60d | 0 | 0 |
 
 ## Next Assembly Queue
 
@@ -64,12 +64,12 @@ The attention score is a routing heuristic, not a quality score. It combines str
 3. **P0 — [Review draft PR #54: Rebrand public Truth Compiler offer to CodeVerdict](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io/pull/54)** — GitHub marks the pull request as draft.
 4. **P0 — [Review draft PR #4: ci: verify ChatGPT Export Studio on Windows, macOS and Linux](https://github.com/MASSIVEMAGNETICS/chatgpt-export-studio/pull/4)** — GitHub marks the pull request as draft.
 5. **P0 — [Review draft PR #35: Integrate delivery role runtime with recorded QA and release packaging](https://github.com/MASSIVEMAGNETICS/dev-ville/pull/35)** — GitHub marks the pull request as draft.
-6. **P1 — [Triage stale canonical repo: victor-whole](https://github.com/MASSIVEMAGNETICS/victor-whole)** — Canonical repo has not been pushed in 113 days.
-7. **P1 — [Triage stale canonical repo: Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator)** — Canonical repo has not been pushed in 59 days.
+6. **P1 — [Triage stale canonical repo: victor-whole](https://github.com/MASSIVEMAGNETICS/victor-whole)** — Canonical repo has not been pushed in 114 days.
+7. **P1 — [Triage stale canonical repo: Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator)** — Canonical repo has not been pushed in 60 days.
 8. **P1 — [Triage stale canonical repo: repo-brain](https://github.com/MASSIVEMAGNETICS/repo-brain)** — Canonical repo has not been pushed in 200 days.
-9. **P1 — [Triage stale canonical repo: victor-os-autodeploy](https://github.com/MASSIVEMAGNETICS/victor-os-autodeploy)** — Canonical repo has not been pushed in 149 days.
+9. **P1 — [Triage stale canonical repo: victor-os-autodeploy](https://github.com/MASSIVEMAGNETICS/victor-os-autodeploy)** — Canonical repo has not been pushed in 150 days.
 10. **P1 — Resolve unseen canonical repo: MASSIVEMAGNETICS/suno-killer** — Manifest expects this repository, but authenticated owner/private inventory coverage is incomplete. Verify repository visibility, existence, and canonical role before changing the manifest or attempting recovery.
-11. **P1 — [Triage stale canonical repo: victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore)** — Canonical repo has not been pushed in 63 days.
+11. **P1 — [Triage stale canonical repo: victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore)** — Canonical repo has not been pushed in 64 days.
 12. **P1 — [Triage stale canonical repo: massive_starpower](https://github.com/MASSIVEMAGNETICS/massive_starpower)** — Canonical repo has not been pushed in 126 days.
 
 ## Coverage Warnings
