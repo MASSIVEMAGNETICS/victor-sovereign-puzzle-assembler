@@ -4,7 +4,7 @@
   ],
   "api_request_count": 11,
   "cross_repo_write_policy": "disabled-unless-explicitly-authorized",
-  "generated_at": "2026-10-20T17:59:05.944412+00:00",
+  "generated_at": "2026-10-21T18:03:16.261205+00:00",
   "mission": "Turn the GitHub lattice into one observable, self-assembling, revenue-aware operating system.",
   "mode": "observe-plan-assemble-local",
   "next_actions": [
@@ -51,7 +51,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 114 days.",
+      "reason": "Canonical repo has not been pushed in 115 days.",
       "repo": "MASSIVEMAGNETICS/victor-whole",
       "title": "Triage stale canonical repo: victor-whole",
       "url": "https://github.com/MASSIVEMAGNETICS/victor-whole"
@@ -59,7 +59,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 60 days.",
+      "reason": "Canonical repo has not been pushed in 61 days.",
       "repo": "MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator",
       "title": "Triage stale canonical repo: Victor-Synthetic-Orchestrator",
       "url": "https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator"
@@ -67,7 +67,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 200 days.",
+      "reason": "Canonical repo has not been pushed in 201 days.",
       "repo": "MASSIVEMAGNETICS/repo-brain",
       "title": "Triage stale canonical repo: repo-brain",
       "url": "https://github.com/MASSIVEMAGNETICS/repo-brain"
@@ -75,7 +75,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 150 days.",
+      "reason": "Canonical repo has not been pushed in 151 days.",
       "repo": "MASSIVEMAGNETICS/victor-os-autodeploy",
       "title": "Triage stale canonical repo: victor-os-autodeploy",
       "url": "https://github.com/MASSIVEMAGNETICS/victor-os-autodeploy"
@@ -91,7 +91,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 64 days.",
+      "reason": "Canonical repo has not been pushed in 65 days.",
       "repo": "MASSIVEMAGNETICS/victor-suno-godcore",
       "title": "Triage stale canonical repo: victor-suno-godcore",
       "url": "https://github.com/MASSIVEMAGNETICS/victor-suno-godcore"
@@ -99,7 +99,7 @@
     {
       "kind": "triage_stale_canonical",
       "priority": "P1",
-      "reason": "Canonical repo has not been pushed in 126 days.",
+      "reason": "Canonical repo has not been pushed in 127 days.",
       "repo": "MASSIVEMAGNETICS/massive_starpower",
       "title": "Triage stale canonical repo: massive_starpower",
       "url": "https://github.com/MASSIVEMAGNETICS/massive_starpower"
@@ -108,8 +108,8 @@
   "owner": "MASSIVEMAGNETICS",
   "pillars": [
     {
-      "active_14d": 3,
-      "attention_sum": 355,
+      "active_14d": 1,
+      "attention_sum": 343,
       "canonical_count": 1,
       "id": "identity_surface",
       "name": "iambandobandz / Empire Router",
@@ -119,8 +119,8 @@
       "repo_count": 11
     },
     {
-      "active_14d": 4,
-      "attention_sum": 2363,
+      "active_14d": 3,
+      "attention_sum": 2352,
       "canonical_count": 5,
       "id": "victor_core",
       "name": "Victor Authority + Continuity",
@@ -141,8 +141,8 @@
       "repo_count": 6
     },
     {
-      "active_14d": 2,
-      "attention_sum": 621,
+      "active_14d": 1,
+      "attention_sum": 615,
       "canonical_count": 3,
       "id": "music_engine",
       "name": "Music + Catalog Engine",
@@ -185,8 +185,8 @@
       "repo_count": 25
     },
     {
-      "active_14d": 3,
-      "attention_sum": 1672,
+      "active_14d": 2,
+      "attention_sum": 1666,
       "canonical_count": 0,
       "id": "supporting_lattice",
       "name": "Supporting Lattice",
@@ -200,7 +200,7 @@
   "receipt_generator": "empire_autopilot_guarded.py",
   "repositories": [
     {
-      "age_days": 86,
+      "age_days": 87,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -224,7 +224,7 @@
       "updated_at": "2026-08-04T12:40:25Z"
     },
     {
-      "age_days": 217,
+      "age_days": 218,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -248,7 +248,7 @@
       "updated_at": "2026-07-31T00:36:24Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -272,7 +272,7 @@
       "updated_at": "2026-07-30T22:29:19Z"
     },
     {
-      "age_days": 225,
+      "age_days": 226,
       "archived": false,
       "attention_score": 23,
       "canonical": false,
@@ -296,7 +296,7 @@
       "updated_at": "2026-07-31T02:54:47Z"
     },
     {
-      "age_days": 15,
+      "age_days": 16,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -320,7 +320,7 @@
       "updated_at": "2026-10-06T03:15:13Z"
     },
     {
-      "age_days": 221,
+      "age_days": 222,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -344,7 +344,7 @@
       "updated_at": "2026-07-31T00:38:45Z"
     },
     {
-      "age_days": 159,
+      "age_days": 160,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -368,7 +368,7 @@
       "updated_at": "2026-07-30T23:20:56Z"
     },
     {
-      "age_days": 82,
+      "age_days": 83,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -392,7 +392,7 @@
       "updated_at": "2026-03-14T02:01:03Z"
     },
     {
-      "age_days": 398,
+      "age_days": 399,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -416,7 +416,7 @@
       "updated_at": "2025-09-17T08:50:01Z"
     },
     {
-      "age_days": 416,
+      "age_days": 417,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -440,7 +440,7 @@
       "updated_at": "2025-07-15T21:22:22Z"
     },
     {
-      "age_days": 269,
+      "age_days": 270,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -464,7 +464,7 @@
       "updated_at": "2026-07-31T03:40:38Z"
     },
     {
-      "age_days": 330,
+      "age_days": 331,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -488,7 +488,7 @@
       "updated_at": "2026-07-29T23:09:05Z"
     },
     {
-      "age_days": 492,
+      "age_days": 493,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -512,7 +512,7 @@
       "updated_at": "2025-06-29T16:27:12Z"
     },
     {
-      "age_days": 74,
+      "age_days": 75,
       "archived": false,
       "attention_score": 34,
       "canonical": false,
@@ -536,7 +536,7 @@
       "updated_at": "2026-08-04T13:10:55Z"
     },
     {
-      "age_days": 225,
+      "age_days": 226,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -560,7 +560,7 @@
       "updated_at": "2026-03-09T15:05:51Z"
     },
     {
-      "age_days": 97,
+      "age_days": 98,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -584,7 +584,7 @@
       "updated_at": "2026-04-05T13:44:07Z"
     },
     {
-      "age_days": 330,
+      "age_days": 331,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -608,7 +608,7 @@
       "updated_at": "2025-11-24T13:03:39Z"
     },
     {
-      "age_days": 447,
+      "age_days": 448,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -632,7 +632,7 @@
       "updated_at": "2025-07-30T00:53:26Z"
     },
     {
-      "age_days": 157,
+      "age_days": 158,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -656,7 +656,7 @@
       "updated_at": "2026-05-16T13:09:52Z"
     },
     {
-      "age_days": 247,
+      "age_days": 248,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -680,7 +680,7 @@
       "updated_at": "2026-07-31T03:15:26Z"
     },
     {
-      "age_days": 220,
+      "age_days": 221,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -704,7 +704,7 @@
       "updated_at": "2026-08-03T13:53:42Z"
     },
     {
-      "age_days": 115,
+      "age_days": 116,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -728,7 +728,7 @@
       "updated_at": "2026-07-30T04:38:41Z"
     },
     {
-      "age_days": 1685,
+      "age_days": 1686,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -752,7 +752,7 @@
       "updated_at": "2025-11-30T04:00:05Z"
     },
     {
-      "age_days": 289,
+      "age_days": 290,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -776,7 +776,7 @@
       "updated_at": "2026-01-14T12:01:17Z"
     },
     {
-      "age_days": 808,
+      "age_days": 809,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -800,7 +800,7 @@
       "updated_at": "2026-01-13T15:59:45Z"
     },
     {
-      "age_days": 301,
+      "age_days": 302,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -824,7 +824,7 @@
       "updated_at": "2025-12-22T21:12:59Z"
     },
     {
-      "age_days": 330,
+      "age_days": 331,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -848,7 +848,7 @@
       "updated_at": "2025-11-24T03:39:40Z"
     },
     {
-      "age_days": 381,
+      "age_days": 382,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -872,7 +872,7 @@
       "updated_at": "2025-10-04T17:52:02Z"
     },
     {
-      "age_days": 461,
+      "age_days": 462,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -896,7 +896,7 @@
       "updated_at": "2025-07-16T08:53:32Z"
     },
     {
-      "age_days": 478,
+      "age_days": 479,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -920,7 +920,7 @@
       "updated_at": "2025-06-28T19:33:00Z"
     },
     {
-      "age_days": 251,
+      "age_days": 252,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -944,7 +944,7 @@
       "updated_at": "2026-01-13T15:45:18Z"
     },
     {
-      "age_days": 285,
+      "age_days": 286,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -968,7 +968,7 @@
       "updated_at": "2026-07-31T04:01:43Z"
     },
     {
-      "age_days": 417,
+      "age_days": 418,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -992,7 +992,7 @@
       "updated_at": "2025-08-28T21:12:13Z"
     },
     {
-      "age_days": 260,
+      "age_days": 261,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -1016,7 +1016,7 @@
       "updated_at": "2026-07-31T03:22:45Z"
     },
     {
-      "age_days": 1032,
+      "age_days": 1033,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1040,7 +1040,7 @@
       "updated_at": "2026-01-21T20:27:43Z"
     },
     {
-      "age_days": 459,
+      "age_days": 460,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1064,7 +1064,7 @@
       "updated_at": "2025-07-18T13:15:30Z"
     },
     {
-      "age_days": 246,
+      "age_days": 247,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -1088,7 +1088,7 @@
       "updated_at": "2026-07-31T03:12:17Z"
     },
     {
-      "age_days": 238,
+      "age_days": 239,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1112,7 +1112,7 @@
       "updated_at": "2026-02-23T22:04:51Z"
     },
     {
-      "age_days": 227,
+      "age_days": 228,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -1136,7 +1136,7 @@
       "updated_at": "2026-03-09T06:54:07Z"
     },
     {
-      "age_days": 186,
+      "age_days": 187,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1160,7 +1160,7 @@
       "updated_at": "2026-07-31T00:21:09Z"
     },
     {
-      "age_days": 332,
+      "age_days": 333,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1184,7 +1184,7 @@
       "updated_at": "2025-11-21T18:20:33Z"
     },
     {
-      "age_days": 478,
+      "age_days": 479,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1208,7 +1208,7 @@
       "updated_at": "2025-06-29T06:20:57Z"
     },
     {
-      "age_days": 333,
+      "age_days": 334,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1232,9 +1232,9 @@
       "updated_at": "2025-11-21T13:14:21Z"
     },
     {
-      "age_days": 14,
+      "age_days": 15,
       "archived": false,
-      "attention_score": 40,
+      "attention_score": 34,
       "canonical": false,
       "default_branch": "master",
       "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
@@ -1256,7 +1256,7 @@
       "updated_at": "2026-10-06T03:10:31Z"
     },
     {
-      "age_days": 80,
+      "age_days": 81,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -1280,7 +1280,7 @@
       "updated_at": "2026-08-04T12:47:28Z"
     },
     {
-      "age_days": 461,
+      "age_days": 462,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1304,7 +1304,7 @@
       "updated_at": "2025-07-20T11:38:08Z"
     },
     {
-      "age_days": 790,
+      "age_days": 791,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1328,7 +1328,7 @@
       "updated_at": "2025-06-28T16:07:53Z"
     },
     {
-      "age_days": 157,
+      "age_days": 158,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1352,7 +1352,7 @@
       "updated_at": "2026-05-16T13:43:13Z"
     },
     {
-      "age_days": 5,
+      "age_days": 6,
       "archived": false,
       "attention_score": 35,
       "canonical": false,
@@ -1376,9 +1376,9 @@
       "updated_at": "2026-05-14T18:25:50Z"
     },
     {
-      "age_days": 14,
+      "age_days": 15,
       "archived": false,
-      "attention_score": 40,
+      "attention_score": 34,
       "canonical": false,
       "default_branch": "main",
       "description": "Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
@@ -1400,9 +1400,9 @@
       "updated_at": "2026-10-06T03:13:06Z"
     },
     {
-      "age_days": 14,
+      "age_days": 15,
       "archived": false,
-      "attention_score": 28,
+      "attention_score": 22,
       "canonical": false,
       "default_branch": "main",
       "description": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company\u2019s context and systems.",
@@ -1424,7 +1424,7 @@
       "updated_at": "2026-10-06T03:14:41Z"
     },
     {
-      "age_days": 432,
+      "age_days": 433,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1448,7 +1448,7 @@
       "updated_at": "2025-11-26T20:44:43Z"
     },
     {
-      "age_days": 485,
+      "age_days": 486,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1472,7 +1472,7 @@
       "updated_at": "2025-06-22T02:09:44Z"
     },
     {
-      "age_days": 401,
+      "age_days": 402,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1496,7 +1496,7 @@
       "updated_at": "2026-01-07T04:38:05Z"
     },
     {
-      "age_days": 194,
+      "age_days": 195,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1520,7 +1520,7 @@
       "updated_at": "2026-07-31T00:24:33Z"
     },
     {
-      "age_days": 222,
+      "age_days": 223,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1544,7 +1544,7 @@
       "updated_at": "2026-07-31T01:30:18Z"
     },
     {
-      "age_days": 368,
+      "age_days": 369,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1568,7 +1568,7 @@
       "updated_at": "2025-10-18T13:03:01Z"
     },
     {
-      "age_days": 478,
+      "age_days": 479,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1592,7 +1592,7 @@
       "updated_at": "2025-06-29T03:43:01Z"
     },
     {
-      "age_days": 273,
+      "age_days": 274,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1616,7 +1616,7 @@
       "updated_at": "2026-01-20T00:11:28Z"
     },
     {
-      "age_days": 325,
+      "age_days": 326,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -1640,7 +1640,7 @@
       "updated_at": "2025-11-29T12:58:44Z"
     },
     {
-      "age_days": 157,
+      "age_days": 158,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1664,7 +1664,7 @@
       "updated_at": "2026-07-30T23:08:59Z"
     },
     {
-      "age_days": 1567,
+      "age_days": 1568,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1688,7 +1688,7 @@
       "updated_at": "2025-06-23T16:27:55Z"
     },
     {
-      "age_days": 887,
+      "age_days": 888,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1712,7 +1712,7 @@
       "updated_at": "2025-11-26T19:57:36Z"
     },
     {
-      "age_days": 110,
+      "age_days": 111,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1754,13 +1754,13 @@
       "pillar_name": "Dev-Ville Execution Layer",
       "pillar_priority": 9,
       "private": false,
-      "pushed_at": "2026-10-20T17:30:05Z",
-      "size_kb": 497,
+      "pushed_at": "2026-10-21T15:35:04Z",
+      "size_kb": 494,
       "stars": 2,
-      "updated_at": "2026-10-20T17:30:10Z"
+      "updated_at": "2026-10-21T15:36:49Z"
     },
     {
-      "age_days": 235,
+      "age_days": 236,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -1784,7 +1784,7 @@
       "updated_at": "2026-03-09T06:54:33Z"
     },
     {
-      "age_days": 225,
+      "age_days": 226,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1808,7 +1808,7 @@
       "updated_at": "2026-03-09T06:53:59Z"
     },
     {
-      "age_days": 328,
+      "age_days": 329,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -1832,7 +1832,7 @@
       "updated_at": "2025-11-24T15:11:51Z"
     },
     {
-      "age_days": 436,
+      "age_days": 437,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1856,9 +1856,9 @@
       "updated_at": "2025-09-29T17:45:21Z"
     },
     {
-      "age_days": 14,
+      "age_days": 15,
       "archived": false,
-      "attention_score": 40,
+      "attention_score": 34,
       "canonical": false,
       "default_branch": "main",
       "description": "Next generation e2e testing framework for web and mobile apps.",
@@ -1880,7 +1880,7 @@
       "updated_at": "2026-10-06T03:10:12Z"
     },
     {
-      "age_days": 157,
+      "age_days": 158,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1904,7 +1904,7 @@
       "updated_at": "2026-07-30T23:04:59Z"
     },
     {
-      "age_days": 193,
+      "age_days": 194,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -1928,7 +1928,7 @@
       "updated_at": "2026-07-31T00:23:31Z"
     },
     {
-      "age_days": 275,
+      "age_days": 276,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -1952,7 +1952,7 @@
       "updated_at": "2026-01-20T13:04:01Z"
     },
     {
-      "age_days": 186,
+      "age_days": 187,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -1976,7 +1976,7 @@
       "updated_at": "2026-04-16T18:40:05Z"
     },
     {
-      "age_days": 324,
+      "age_days": 325,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2000,7 +2000,7 @@
       "updated_at": "2025-11-30T02:47:54Z"
     },
     {
-      "age_days": 382,
+      "age_days": 383,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2024,7 +2024,7 @@
       "updated_at": "2025-10-19T08:51:13Z"
     },
     {
-      "age_days": 236,
+      "age_days": 237,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -2048,7 +2048,7 @@
       "updated_at": "2026-07-31T03:10:14Z"
     },
     {
-      "age_days": 330,
+      "age_days": 331,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -2072,7 +2072,7 @@
       "updated_at": "2025-11-23T18:24:38Z"
     },
     {
-      "age_days": 131,
+      "age_days": 132,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -2096,7 +2096,7 @@
       "updated_at": "2026-07-30T22:10:40Z"
     },
     {
-      "age_days": 100,
+      "age_days": 101,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2120,7 +2120,7 @@
       "updated_at": "2026-07-30T04:01:22Z"
     },
     {
-      "age_days": 135,
+      "age_days": 136,
       "archived": false,
       "attention_score": 26,
       "canonical": true,
@@ -2144,7 +2144,7 @@
       "updated_at": "2026-07-30T22:18:38Z"
     },
     {
-      "age_days": 280,
+      "age_days": 281,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2168,7 +2168,7 @@
       "updated_at": "2026-07-31T03:46:33Z"
     },
     {
-      "age_days": 477,
+      "age_days": 478,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2192,7 +2192,7 @@
       "updated_at": "2025-06-29T17:18:39Z"
     },
     {
-      "age_days": 331,
+      "age_days": 332,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2216,7 +2216,7 @@
       "updated_at": "2026-01-14T15:05:42Z"
     },
     {
-      "age_days": 544,
+      "age_days": 545,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2240,7 +2240,7 @@
       "updated_at": "2026-01-14T15:08:51Z"
     },
     {
-      "age_days": 304,
+      "age_days": 305,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2264,7 +2264,7 @@
       "updated_at": "2025-12-21T11:33:57Z"
     },
     {
-      "age_days": 285,
+      "age_days": 286,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2288,7 +2288,7 @@
       "updated_at": "2026-01-08T14:07:30Z"
     },
     {
-      "age_days": 478,
+      "age_days": 479,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2312,7 +2312,7 @@
       "updated_at": "2025-06-29T06:16:14Z"
     },
     {
-      "age_days": 396,
+      "age_days": 397,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2336,7 +2336,7 @@
       "updated_at": "2026-08-09T21:09:52Z"
     },
     {
-      "age_days": 186,
+      "age_days": 187,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2360,7 +2360,7 @@
       "updated_at": "2026-04-16T19:18:28Z"
     },
     {
-      "age_days": 333,
+      "age_days": 334,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2384,7 +2384,7 @@
       "updated_at": "2025-11-21T15:10:15Z"
     },
     {
-      "age_days": 260,
+      "age_days": 261,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2408,7 +2408,7 @@
       "updated_at": "2026-07-31T03:21:24Z"
     },
     {
-      "age_days": 247,
+      "age_days": 248,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2432,7 +2432,7 @@
       "updated_at": "2025-10-19T08:51:35Z"
     },
     {
-      "age_days": 404,
+      "age_days": 405,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2456,7 +2456,7 @@
       "updated_at": "2025-10-19T07:35:29Z"
     },
     {
-      "age_days": 405,
+      "age_days": 406,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -2480,7 +2480,7 @@
       "updated_at": "2025-10-19T07:35:40Z"
     },
     {
-      "age_days": 385,
+      "age_days": 386,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2504,7 +2504,7 @@
       "updated_at": "2025-09-29T21:35:58Z"
     },
     {
-      "age_days": 152,
+      "age_days": 153,
       "archived": false,
       "attention_score": 32,
       "canonical": true,
@@ -2528,7 +2528,7 @@
       "updated_at": "2026-07-30T23:00:03Z"
     },
     {
-      "age_days": 200,
+      "age_days": 201,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2552,7 +2552,7 @@
       "updated_at": "2026-07-31T00:32:14Z"
     },
     {
-      "age_days": 186,
+      "age_days": 187,
       "archived": false,
       "attention_score": 26,
       "canonical": true,
@@ -2576,7 +2576,7 @@
       "updated_at": "2026-08-27T21:48:43Z"
     },
     {
-      "age_days": 227,
+      "age_days": 228,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2600,7 +2600,7 @@
       "updated_at": "2026-07-31T02:59:13Z"
     },
     {
-      "age_days": 271,
+      "age_days": 272,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2624,7 +2624,7 @@
       "updated_at": "2026-01-22T13:55:39Z"
     },
     {
-      "age_days": 145,
+      "age_days": 146,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -2648,7 +2648,7 @@
       "updated_at": "2026-07-30T22:36:29Z"
     },
     {
-      "age_days": 747,
+      "age_days": 748,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2672,7 +2672,7 @@
       "updated_at": "2025-07-22T15:04:22Z"
     },
     {
-      "age_days": 330,
+      "age_days": 331,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2696,7 +2696,7 @@
       "updated_at": "2025-11-24T09:17:32Z"
     },
     {
-      "age_days": 326,
+      "age_days": 327,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -2720,7 +2720,7 @@
       "updated_at": "2025-11-30T04:03:34Z"
     },
     {
-      "age_days": 465,
+      "age_days": 466,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2744,7 +2744,7 @@
       "updated_at": "2025-07-12T17:40:04Z"
     },
     {
-      "age_days": 81,
+      "age_days": 82,
       "archived": false,
       "attention_score": 34,
       "canonical": false,
@@ -2768,7 +2768,7 @@
       "updated_at": "2025-09-11T23:45:33Z"
     },
     {
-      "age_days": 334,
+      "age_days": 335,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2792,7 +2792,7 @@
       "updated_at": "2025-11-20T15:13:40Z"
     },
     {
-      "age_days": 66,
+      "age_days": 67,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2816,7 +2816,7 @@
       "updated_at": "2025-08-18T23:23:16Z"
     },
     {
-      "age_days": 225,
+      "age_days": 226,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2840,7 +2840,7 @@
       "updated_at": "2026-07-31T02:53:23Z"
     },
     {
-      "age_days": 447,
+      "age_days": 448,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2864,7 +2864,7 @@
       "updated_at": "2025-07-28T15:06:40Z"
     },
     {
-      "age_days": 475,
+      "age_days": 476,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2888,7 +2888,7 @@
       "updated_at": "2025-07-16T09:30:49Z"
     },
     {
-      "age_days": 67,
+      "age_days": 68,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2912,7 +2912,7 @@
       "updated_at": "2026-08-14T06:43:30Z"
     },
     {
-      "age_days": 684,
+      "age_days": 685,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2936,7 +2936,7 @@
       "updated_at": "2025-12-21T10:31:52Z"
     },
     {
-      "age_days": 610,
+      "age_days": 611,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -2960,7 +2960,7 @@
       "updated_at": "2025-12-21T14:48:32Z"
     },
     {
-      "age_days": 448,
+      "age_days": 449,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -2984,7 +2984,7 @@
       "updated_at": "2025-07-25T15:45:42Z"
     },
     {
-      "age_days": 330,
+      "age_days": 331,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3008,7 +3008,7 @@
       "updated_at": "2025-11-24T03:36:28Z"
     },
     {
-      "age_days": 197,
+      "age_days": 198,
       "archived": false,
       "attention_score": 26,
       "canonical": true,
@@ -3032,7 +3032,7 @@
       "updated_at": "2026-07-31T00:30:49Z"
     },
     {
-      "age_days": 3211,
+      "age_days": 3212,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3056,7 +3056,7 @@
       "updated_at": "2025-09-24T22:26:04Z"
     },
     {
-      "age_days": 2246,
+      "age_days": 2247,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3080,7 +3080,7 @@
       "updated_at": "2025-07-16T10:31:38Z"
     },
     {
-      "age_days": 115,
+      "age_days": 116,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3104,7 +3104,7 @@
       "updated_at": "2026-07-30T04:46:12Z"
     },
     {
-      "age_days": 485,
+      "age_days": 486,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3128,7 +3128,7 @@
       "updated_at": "2025-06-10T06:06:10Z"
     },
     {
-      "age_days": 479,
+      "age_days": 480,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3152,7 +3152,7 @@
       "updated_at": "2025-06-28T16:06:11Z"
     },
     {
-      "age_days": 246,
+      "age_days": 247,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3176,7 +3176,7 @@
       "updated_at": "2026-07-31T03:11:40Z"
     },
     {
-      "age_days": 358,
+      "age_days": 359,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3200,7 +3200,7 @@
       "updated_at": "2026-01-07T12:21:09Z"
     },
     {
-      "age_days": 151,
+      "age_days": 152,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3224,7 +3224,7 @@
       "updated_at": "2026-07-30T22:55:01Z"
     },
     {
-      "age_days": 157,
+      "age_days": 158,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3248,7 +3248,7 @@
       "updated_at": "2026-05-16T00:26:32Z"
     },
     {
-      "age_days": 126,
+      "age_days": 127,
       "archived": false,
       "attention_score": 30,
       "canonical": true,
@@ -3272,7 +3272,7 @@
       "updated_at": "2026-07-30T04:57:06Z"
     },
     {
-      "age_days": 67,
+      "age_days": 68,
       "archived": false,
       "attention_score": 34,
       "canonical": false,
@@ -3314,13 +3314,13 @@
       "pillar_name": "iambandobandz / Empire Router",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-10-20T17:12:48Z",
-      "size_kb": 10483,
+      "pushed_at": "2026-10-21T17:16:00Z",
+      "size_kb": 10691,
       "stars": 0,
-      "updated_at": "2026-10-20T17:12:52Z"
+      "updated_at": "2026-10-21T17:16:04Z"
     },
     {
-      "age_days": 146,
+      "age_days": 147,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3344,7 +3344,7 @@
       "updated_at": "2026-07-30T22:38:12Z"
     },
     {
-      "age_days": 479,
+      "age_days": 480,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3368,7 +3368,7 @@
       "updated_at": "2025-06-29T14:27:27Z"
     },
     {
-      "age_days": 1282,
+      "age_days": 1283,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3392,7 +3392,7 @@
       "updated_at": "2025-06-12T18:39:04Z"
     },
     {
-      "age_days": 381,
+      "age_days": 382,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3416,7 +3416,7 @@
       "updated_at": "2025-10-19T07:32:29Z"
     },
     {
-      "age_days": 225,
+      "age_days": 226,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3440,7 +3440,7 @@
       "updated_at": "2026-03-09T06:54:01Z"
     },
     {
-      "age_days": 410,
+      "age_days": 411,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3464,7 +3464,7 @@
       "updated_at": "2026-01-14T15:09:37Z"
     },
     {
-      "age_days": 312,
+      "age_days": 313,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3488,7 +3488,7 @@
       "updated_at": "2025-12-15T16:51:04Z"
     },
     {
-      "age_days": 271,
+      "age_days": 272,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -3512,7 +3512,7 @@
       "updated_at": "2026-07-31T03:42:42Z"
     },
     {
-      "age_days": 223,
+      "age_days": 224,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3536,7 +3536,7 @@
       "updated_at": "2026-08-27T21:48:42Z"
     },
     {
-      "age_days": 285,
+      "age_days": 286,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -3560,7 +3560,7 @@
       "updated_at": "2026-01-12T00:50:02Z"
     },
     {
-      "age_days": 333,
+      "age_days": 334,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -3584,7 +3584,7 @@
       "updated_at": "2025-11-21T14:41:01Z"
     },
     {
-      "age_days": 382,
+      "age_days": 383,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3608,7 +3608,7 @@
       "updated_at": "2025-10-04T14:45:41Z"
     },
     {
-      "age_days": 78,
+      "age_days": 79,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -3632,7 +3632,7 @@
       "updated_at": "2026-08-14T01:13:27Z"
     },
     {
-      "age_days": 280,
+      "age_days": 281,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3656,7 +3656,7 @@
       "updated_at": "2026-07-31T03:46:07Z"
     },
     {
-      "age_days": 333,
+      "age_days": 334,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3680,7 +3680,7 @@
       "updated_at": "2025-11-20T21:34:26Z"
     },
     {
-      "age_days": 285,
+      "age_days": 286,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -3704,7 +3704,7 @@
       "updated_at": "2026-01-08T13:40:47Z"
     },
     {
-      "age_days": 222,
+      "age_days": 223,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -3728,7 +3728,7 @@
       "updated_at": "2026-07-31T01:32:28Z"
     },
     {
-      "age_days": 335,
+      "age_days": 336,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3752,7 +3752,7 @@
       "updated_at": "2025-11-19T16:53:48Z"
     },
     {
-      "age_days": 114,
+      "age_days": 115,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3776,7 +3776,7 @@
       "updated_at": "2026-07-30T04:30:48Z"
     },
     {
-      "age_days": 186,
+      "age_days": 187,
       "archived": false,
       "attention_score": 37,
       "canonical": false,
@@ -3800,7 +3800,7 @@
       "updated_at": "2026-07-31T00:09:59Z"
     },
     {
-      "age_days": 336,
+      "age_days": 337,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3824,7 +3824,7 @@
       "updated_at": "2025-11-23T19:56:23Z"
     },
     {
-      "age_days": 333,
+      "age_days": 334,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3848,7 +3848,7 @@
       "updated_at": "2025-11-21T04:16:52Z"
     },
     {
-      "age_days": 198,
+      "age_days": 199,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3872,7 +3872,7 @@
       "updated_at": "2026-04-05T14:05:25Z"
     },
     {
-      "age_days": 131,
+      "age_days": 132,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -3896,7 +3896,7 @@
       "updated_at": "2026-05-11T14:55:43Z"
     },
     {
-      "age_days": 12,
+      "age_days": 13,
       "archived": false,
       "attention_score": 64,
       "canonical": true,
@@ -3920,7 +3920,7 @@
       "updated_at": "2026-07-30T22:38:33Z"
     },
     {
-      "age_days": 461,
+      "age_days": 462,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3944,7 +3944,7 @@
       "updated_at": "2025-07-15T20:33:59Z"
     },
     {
-      "age_days": 275,
+      "age_days": 276,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -3968,7 +3968,7 @@
       "updated_at": "2026-01-17T23:26:40Z"
     },
     {
-      "age_days": 159,
+      "age_days": 160,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -3992,7 +3992,7 @@
       "updated_at": "2026-07-30T23:17:04Z"
     },
     {
-      "age_days": 17,
+      "age_days": 18,
       "archived": false,
       "attention_score": 34,
       "canonical": false,
@@ -4016,7 +4016,7 @@
       "updated_at": "2026-10-06T03:11:26Z"
     },
     {
-      "age_days": 272,
+      "age_days": 273,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4040,7 +4040,7 @@
       "updated_at": "2026-01-20T21:16:26Z"
     },
     {
-      "age_days": 557,
+      "age_days": 558,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4064,7 +4064,7 @@
       "updated_at": "2025-12-10T17:44:55Z"
     },
     {
-      "age_days": 280,
+      "age_days": 281,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4088,7 +4088,7 @@
       "updated_at": "2026-01-13T16:00:33Z"
     },
     {
-      "age_days": 280,
+      "age_days": 281,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4112,7 +4112,7 @@
       "updated_at": "2026-01-13T16:02:20Z"
     },
     {
-      "age_days": 285,
+      "age_days": 286,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -4136,7 +4136,7 @@
       "updated_at": "2026-01-07T20:27:16Z"
     },
     {
-      "age_days": 289,
+      "age_days": 290,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4160,7 +4160,7 @@
       "updated_at": "2026-01-08T13:43:13Z"
     },
     {
-      "age_days": 447,
+      "age_days": 448,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4184,7 +4184,7 @@
       "updated_at": "2025-07-28T15:27:25Z"
     },
     {
-      "age_days": 282,
+      "age_days": 283,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -4208,7 +4208,7 @@
       "updated_at": "2026-07-31T03:57:30Z"
     },
     {
-      "age_days": 74,
+      "age_days": 75,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -4232,7 +4232,7 @@
       "updated_at": "2026-08-14T03:47:10Z"
     },
     {
-      "age_days": 705,
+      "age_days": 706,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4256,7 +4256,7 @@
       "updated_at": "2025-10-19T07:32:06Z"
     },
     {
-      "age_days": 227,
+      "age_days": 228,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -4280,7 +4280,7 @@
       "updated_at": "2026-03-09T06:54:33Z"
     },
     {
-      "age_days": 280,
+      "age_days": 281,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4304,7 +4304,7 @@
       "updated_at": "2026-07-31T03:45:30Z"
     },
     {
-      "age_days": 303,
+      "age_days": 304,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -4328,7 +4328,7 @@
       "updated_at": "2026-07-29T23:25:57Z"
     },
     {
-      "age_days": 186,
+      "age_days": 187,
       "archived": false,
       "attention_score": 24,
       "canonical": false,
@@ -4352,7 +4352,7 @@
       "updated_at": "2026-04-16T20:36:21Z"
     },
     {
-      "age_days": 255,
+      "age_days": 256,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -4376,7 +4376,7 @@
       "updated_at": "2026-07-31T03:16:18Z"
     },
     {
-      "age_days": 285,
+      "age_days": 286,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4400,7 +4400,7 @@
       "updated_at": "2026-01-07T21:10:21Z"
     },
     {
-      "age_days": 367,
+      "age_days": 368,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -4424,7 +4424,7 @@
       "updated_at": "2025-10-18T13:01:39Z"
     },
     {
-      "age_days": 279,
+      "age_days": 280,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -4448,7 +4448,7 @@
       "updated_at": "2026-01-14T17:40:22Z"
     },
     {
-      "age_days": 68,
+      "age_days": 69,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -4472,7 +4472,7 @@
       "updated_at": "2026-08-14T05:02:32Z"
     },
     {
-      "age_days": 426,
+      "age_days": 427,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4496,7 +4496,7 @@
       "updated_at": "2025-08-20T08:12:15Z"
     },
     {
-      "age_days": 266,
+      "age_days": 267,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4520,7 +4520,7 @@
       "updated_at": "2026-01-28T17:22:57Z"
     },
     {
-      "age_days": 446,
+      "age_days": 447,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4544,7 +4544,7 @@
       "updated_at": "2025-11-23T20:30:52Z"
     },
     {
-      "age_days": 66,
+      "age_days": 67,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -4568,7 +4568,7 @@
       "updated_at": "2025-06-29T06:19:04Z"
     },
     {
-      "age_days": 478,
+      "age_days": 479,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4592,7 +4592,7 @@
       "updated_at": "2025-06-29T06:11:00Z"
     },
     {
-      "age_days": 395,
+      "age_days": 396,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4616,7 +4616,7 @@
       "updated_at": "2025-11-01T06:09:13Z"
     },
     {
-      "age_days": 200,
+      "age_days": 201,
       "archived": false,
       "attention_score": 30,
       "canonical": true,
@@ -4640,7 +4640,7 @@
       "updated_at": "2026-07-31T00:33:46Z"
     },
     {
-      "age_days": 119,
+      "age_days": 120,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -4664,7 +4664,7 @@
       "updated_at": "2026-07-30T04:45:30Z"
     },
     {
-      "age_days": 131,
+      "age_days": 132,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -4688,7 +4688,7 @@
       "updated_at": "2026-07-30T22:17:43Z"
     },
     {
-      "age_days": 1148,
+      "age_days": 1149,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4712,7 +4712,7 @@
       "updated_at": "2025-09-29T17:37:38Z"
     },
     {
-      "age_days": 279,
+      "age_days": 280,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4736,7 +4736,7 @@
       "updated_at": "2026-01-14T12:01:06Z"
     },
     {
-      "age_days": 1,
+      "age_days": 2,
       "archived": false,
       "attention_score": 40,
       "canonical": false,
@@ -4760,7 +4760,7 @@
       "updated_at": "2026-10-01T01:43:26Z"
     },
     {
-      "age_days": 367,
+      "age_days": 368,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4784,7 +4784,7 @@
       "updated_at": "2025-10-19T02:40:45Z"
     },
     {
-      "age_days": 222,
+      "age_days": 223,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -4808,7 +4808,7 @@
       "updated_at": "2026-08-27T21:48:43Z"
     },
     {
-      "age_days": 67,
+      "age_days": 68,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -4832,7 +4832,7 @@
       "updated_at": "2026-08-14T01:15:34Z"
     },
     {
-      "age_days": 158,
+      "age_days": 159,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -4856,7 +4856,7 @@
       "updated_at": "2026-08-09T21:10:04Z"
     },
     {
-      "age_days": 228,
+      "age_days": 229,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -4880,7 +4880,7 @@
       "updated_at": "2026-07-31T03:08:39Z"
     },
     {
-      "age_days": 396,
+      "age_days": 397,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -4904,7 +4904,7 @@
       "updated_at": "2025-09-26T02:08:44Z"
     },
     {
-      "age_days": 103,
+      "age_days": 104,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -4928,7 +4928,7 @@
       "updated_at": "2026-07-30T04:08:55Z"
     },
     {
-      "age_days": 115,
+      "age_days": 116,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -4952,7 +4952,7 @@
       "updated_at": "2026-07-30T04:37:37Z"
     },
     {
-      "age_days": 128,
+      "age_days": 129,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -4976,7 +4976,7 @@
       "updated_at": "2026-07-30T21:57:46Z"
     },
     {
-      "age_days": 372,
+      "age_days": 373,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5000,7 +5000,7 @@
       "updated_at": "2025-07-16T09:23:59Z"
     },
     {
-      "age_days": 269,
+      "age_days": 270,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5024,7 +5024,7 @@
       "updated_at": "2026-07-31T03:37:01Z"
     },
     {
-      "age_days": 393,
+      "age_days": 394,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -5048,7 +5048,7 @@
       "updated_at": "2025-09-22T05:54:06Z"
     },
     {
-      "age_days": 227,
+      "age_days": 228,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -5072,7 +5072,7 @@
       "updated_at": "2026-03-09T06:54:06Z"
     },
     {
-      "age_days": 407,
+      "age_days": 408,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5096,7 +5096,7 @@
       "updated_at": "2025-09-09T21:14:37Z"
     },
     {
-      "age_days": 73,
+      "age_days": 74,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -5120,7 +5120,7 @@
       "updated_at": "2026-08-16T23:35:50Z"
     },
     {
-      "age_days": 103,
+      "age_days": 104,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5144,7 +5144,7 @@
       "updated_at": "2026-07-30T04:04:01Z"
     },
     {
-      "age_days": 105,
+      "age_days": 106,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5186,13 +5186,13 @@
       "pillar_name": "Music + Catalog Engine",
       "pillar_priority": 9,
       "private": false,
-      "pushed_at": "2026-10-20T17:34:10Z",
-      "size_kb": 21993,
+      "pushed_at": "2026-10-21T17:42:30Z",
+      "size_kb": 21999,
       "stars": 0,
       "updated_at": "2026-08-26T18:15:32Z"
     },
     {
-      "age_days": 225,
+      "age_days": 226,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5216,7 +5216,7 @@
       "updated_at": "2026-07-31T02:48:27Z"
     },
     {
-      "age_days": 19,
+      "age_days": 20,
       "archived": false,
       "attention_score": 32,
       "canonical": false,
@@ -5240,7 +5240,7 @@
       "updated_at": "2026-10-01T01:43:51Z"
     },
     {
-      "age_days": 19,
+      "age_days": 20,
       "archived": false,
       "attention_score": 32,
       "canonical": false,
@@ -5264,7 +5264,7 @@
       "updated_at": "2026-10-11T06:44:58Z"
     },
     {
-      "age_days": 67,
+      "age_days": 68,
       "archived": false,
       "attention_score": 28,
       "canonical": false,
@@ -5288,7 +5288,7 @@
       "updated_at": "2026-08-09T21:11:40Z"
     },
     {
-      "age_days": 296,
+      "age_days": 297,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5312,7 +5312,7 @@
       "updated_at": "2025-12-22T20:37:11Z"
     },
     {
-      "age_days": 98,
+      "age_days": 99,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5336,7 +5336,7 @@
       "updated_at": "2026-07-30T03:56:43Z"
     },
     {
-      "age_days": 451,
+      "age_days": 452,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -5360,7 +5360,7 @@
       "updated_at": "2025-07-26T02:41:33Z"
     },
     {
-      "age_days": 2399,
+      "age_days": 2400,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -5384,7 +5384,7 @@
       "updated_at": "2025-06-28T16:13:29Z"
     },
     {
-      "age_days": 462,
+      "age_days": 463,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5408,7 +5408,7 @@
       "updated_at": "2025-07-17T18:03:21Z"
     },
     {
-      "age_days": 465,
+      "age_days": 466,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5432,7 +5432,7 @@
       "updated_at": "2025-07-12T17:39:22Z"
     },
     {
-      "age_days": 188,
+      "age_days": 189,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5456,7 +5456,7 @@
       "updated_at": "2026-07-31T00:22:49Z"
     },
     {
-      "age_days": 158,
+      "age_days": 159,
       "archived": false,
       "attention_score": 37,
       "canonical": true,
@@ -5480,7 +5480,7 @@
       "updated_at": "2026-07-30T01:58:53Z"
     },
     {
-      "age_days": 49,
+      "age_days": 50,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -5504,7 +5504,7 @@
       "updated_at": "2026-09-01T02:21:13Z"
     },
     {
-      "age_days": 324,
+      "age_days": 325,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -5528,7 +5528,7 @@
       "updated_at": "2025-11-30T04:09:56Z"
     },
     {
-      "age_days": 64,
+      "age_days": 65,
       "archived": false,
       "attention_score": 15,
       "canonical": false,
@@ -5552,7 +5552,7 @@
       "updated_at": "2026-08-16T23:42:12Z"
     },
     {
-      "age_days": 296,
+      "age_days": 297,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5576,7 +5576,7 @@
       "updated_at": "2025-07-11T20:23:17Z"
     },
     {
-      "age_days": 261,
+      "age_days": 262,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5600,7 +5600,7 @@
       "updated_at": "2026-07-31T03:24:48Z"
     },
     {
-      "age_days": 426,
+      "age_days": 427,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -5624,7 +5624,7 @@
       "updated_at": "2025-08-20T08:10:37Z"
     },
     {
-      "age_days": 267,
+      "age_days": 268,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5648,7 +5648,7 @@
       "updated_at": "2026-01-26T07:27:23Z"
     },
     {
-      "age_days": 324,
+      "age_days": 325,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5672,7 +5672,7 @@
       "updated_at": "2025-11-30T04:52:12Z"
     },
     {
-      "age_days": 479,
+      "age_days": 480,
       "archived": false,
       "attention_score": 16,
       "canonical": false,
@@ -5696,7 +5696,7 @@
       "updated_at": "2025-06-28T15:07:04Z"
     },
     {
-      "age_days": 70,
+      "age_days": 71,
       "archived": false,
       "attention_score": 21,
       "canonical": false,
@@ -5720,7 +5720,7 @@
       "updated_at": "2026-08-14T01:13:14Z"
     },
     {
-      "age_days": 325,
+      "age_days": 326,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5744,7 +5744,7 @@
       "updated_at": "2025-11-30T03:23:35Z"
     },
     {
-      "age_days": 41,
+      "age_days": 42,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -5768,7 +5768,7 @@
       "updated_at": "2026-09-09T12:03:39Z"
     },
     {
-      "age_days": 162,
+      "age_days": 163,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -5792,7 +5792,7 @@
       "updated_at": "2026-07-31T00:08:39Z"
     },
     {
-      "age_days": 128,
+      "age_days": 129,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5816,7 +5816,7 @@
       "updated_at": "2026-07-30T22:01:25Z"
     },
     {
-      "age_days": 332,
+      "age_days": 333,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5840,7 +5840,7 @@
       "updated_at": "2025-11-22T00:47:43Z"
     },
     {
-      "age_days": 218,
+      "age_days": 219,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -5864,7 +5864,7 @@
       "updated_at": "2026-07-31T00:37:48Z"
     },
     {
-      "age_days": 240,
+      "age_days": 241,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5888,7 +5888,7 @@
       "updated_at": "2026-02-22T17:23:42Z"
     },
     {
-      "age_days": 269,
+      "age_days": 270,
       "archived": false,
       "attention_score": 24,
       "canonical": false,
@@ -5912,7 +5912,7 @@
       "updated_at": "2026-07-31T03:33:42Z"
     },
     {
-      "age_days": 186,
+      "age_days": 187,
       "archived": false,
       "attention_score": 36,
       "canonical": false,
@@ -5936,7 +5936,7 @@
       "updated_at": "2026-07-31T00:12:37Z"
     },
     {
-      "age_days": 19,
+      "age_days": 20,
       "archived": false,
       "attention_score": 34,
       "canonical": false,
@@ -5960,7 +5960,7 @@
       "updated_at": "2026-10-01T01:43:39Z"
     },
     {
-      "age_days": 282,
+      "age_days": 283,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -5984,7 +5984,7 @@
       "updated_at": "2026-01-11T13:46:00Z"
     },
     {
-      "age_days": 457,
+      "age_days": 458,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6008,7 +6008,7 @@
       "updated_at": "2025-07-11T03:33:05Z"
     },
     {
-      "age_days": 223,
+      "age_days": 224,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6032,7 +6032,7 @@
       "updated_at": "2026-08-27T21:48:43Z"
     },
     {
-      "age_days": 335,
+      "age_days": 336,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6056,7 +6056,7 @@
       "updated_at": "2025-11-19T13:53:08Z"
     },
     {
-      "age_days": 158,
+      "age_days": 159,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6080,7 +6080,7 @@
       "updated_at": "2026-07-30T23:13:33Z"
     },
     {
-      "age_days": 226,
+      "age_days": 227,
       "archived": false,
       "attention_score": 29,
       "canonical": false,
@@ -6104,7 +6104,7 @@
       "updated_at": "2026-03-09T06:54:04Z"
     },
     {
-      "age_days": 416,
+      "age_days": 417,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6128,7 +6128,7 @@
       "updated_at": "2025-08-29T21:37:17Z"
     },
     {
-      "age_days": 292,
+      "age_days": 293,
       "archived": false,
       "attention_score": 29,
       "canonical": false,
@@ -6152,7 +6152,7 @@
       "updated_at": "2025-08-29T22:58:04Z"
     },
     {
-      "age_days": 55,
+      "age_days": 56,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -6176,7 +6176,7 @@
       "updated_at": "2026-08-25T20:54:00Z"
     },
     {
-      "age_days": 137,
+      "age_days": 138,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6200,7 +6200,7 @@
       "updated_at": "2026-07-30T22:23:10Z"
     },
     {
-      "age_days": 142,
+      "age_days": 143,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6224,7 +6224,7 @@
       "updated_at": "2026-07-30T22:25:08Z"
     },
     {
-      "age_days": 152,
+      "age_days": 153,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6248,7 +6248,7 @@
       "updated_at": "2026-07-30T22:55:10Z"
     },
     {
-      "age_days": 143,
+      "age_days": 144,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6272,7 +6272,7 @@
       "updated_at": "2026-07-30T22:31:13Z"
     },
     {
-      "age_days": 162,
+      "age_days": 163,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6296,7 +6296,7 @@
       "updated_at": "2026-07-31T00:08:02Z"
     },
     {
-      "age_days": 129,
+      "age_days": 130,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6320,7 +6320,7 @@
       "updated_at": "2026-07-30T22:02:27Z"
     },
     {
-      "age_days": 261,
+      "age_days": 262,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6344,7 +6344,7 @@
       "updated_at": "2026-07-31T03:23:47Z"
     },
     {
-      "age_days": 444,
+      "age_days": 445,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6368,7 +6368,7 @@
       "updated_at": "2025-08-02T03:59:14Z"
     },
     {
-      "age_days": 101,
+      "age_days": 102,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6392,7 +6392,7 @@
       "updated_at": "2026-07-30T04:01:59Z"
     },
     {
-      "age_days": 162,
+      "age_days": 163,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6416,7 +6416,7 @@
       "updated_at": "2026-05-11T14:53:39Z"
     },
     {
-      "age_days": 145,
+      "age_days": 146,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6440,7 +6440,7 @@
       "updated_at": "2026-07-30T22:35:53Z"
     },
     {
-      "age_days": 114,
+      "age_days": 115,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6464,7 +6464,7 @@
       "updated_at": "2026-07-30T04:25:34Z"
     },
     {
-      "age_days": 158,
+      "age_days": 159,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6488,7 +6488,7 @@
       "updated_at": "2026-07-30T23:16:00Z"
     },
     {
-      "age_days": 127,
+      "age_days": 128,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6512,7 +6512,7 @@
       "updated_at": "2026-07-30T21:55:30Z"
     },
     {
-      "age_days": 149,
+      "age_days": 150,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6536,7 +6536,7 @@
       "updated_at": "2026-07-30T22:41:26Z"
     },
     {
-      "age_days": 150,
+      "age_days": 151,
       "archived": false,
       "attention_score": 30,
       "canonical": true,
@@ -6560,7 +6560,7 @@
       "updated_at": "2026-07-30T22:45:03Z"
     },
     {
-      "age_days": 150,
+      "age_days": 151,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6584,7 +6584,7 @@
       "updated_at": "2026-07-30T22:52:42Z"
     },
     {
-      "age_days": 127,
+      "age_days": 128,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6608,7 +6608,7 @@
       "updated_at": "2026-07-30T04:58:21Z"
     },
     {
-      "age_days": 73,
+      "age_days": 74,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -6632,7 +6632,7 @@
       "updated_at": "2026-08-09T00:11:20Z"
     },
     {
-      "age_days": 334,
+      "age_days": 335,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6656,7 +6656,7 @@
       "updated_at": "2025-11-19T19:04:00Z"
     },
     {
-      "age_days": 152,
+      "age_days": 153,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6680,7 +6680,7 @@
       "updated_at": "2026-07-30T22:59:25Z"
     },
     {
-      "age_days": 131,
+      "age_days": 132,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6704,7 +6704,7 @@
       "updated_at": "2026-07-30T22:15:34Z"
     },
     {
-      "age_days": 64,
+      "age_days": 65,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -6728,7 +6728,7 @@
       "updated_at": "2026-08-17T00:14:16Z"
     },
     {
-      "age_days": 0,
+      "age_days": 1,
       "archived": false,
       "attention_score": 62,
       "canonical": true,
@@ -6746,13 +6746,13 @@
       "pillar_name": "Victor Authority + Continuity",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-10-19T19:20:20Z",
-      "size_kb": 421,
+      "pushed_at": "2026-10-20T17:59:14Z",
+      "size_kb": 427,
       "stars": 2,
-      "updated_at": "2026-10-19T19:20:24Z"
+      "updated_at": "2026-10-20T17:59:18Z"
     },
     {
-      "age_days": 81,
+      "age_days": 82,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -6776,7 +6776,7 @@
       "updated_at": "2026-07-31T01:17:42Z"
     },
     {
-      "age_days": 57,
+      "age_days": 58,
       "archived": false,
       "attention_score": 52,
       "canonical": false,
@@ -6800,7 +6800,7 @@
       "updated_at": "2026-08-24T14:48:12Z"
     },
     {
-      "age_days": 64,
+      "age_days": 65,
       "archived": false,
       "attention_score": 35,
       "canonical": true,
@@ -6824,7 +6824,7 @@
       "updated_at": "2026-08-17T12:47:22Z"
     },
     {
-      "age_days": 60,
+      "age_days": 61,
       "archived": false,
       "attention_score": 37,
       "canonical": true,
@@ -6848,7 +6848,7 @@
       "updated_at": "2026-08-21T10:17:17Z"
     },
     {
-      "age_days": 128,
+      "age_days": 129,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6872,7 +6872,7 @@
       "updated_at": "2026-06-14T15:38:14Z"
     },
     {
-      "age_days": 285,
+      "age_days": 286,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6896,7 +6896,7 @@
       "updated_at": "2026-01-08T14:02:07Z"
     },
     {
-      "age_days": 113,
+      "age_days": 114,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6920,7 +6920,7 @@
       "updated_at": "2026-07-30T04:22:28Z"
     },
     {
-      "age_days": 114,
+      "age_days": 115,
       "archived": false,
       "attention_score": 32,
       "canonical": true,
@@ -6944,7 +6944,7 @@
       "updated_at": "2026-07-30T04:23:32Z"
     },
     {
-      "age_days": 327,
+      "age_days": 328,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -6968,7 +6968,7 @@
       "updated_at": "2025-11-26T19:42:06Z"
     },
     {
-      "age_days": 35,
+      "age_days": 36,
       "archived": false,
       "attention_score": 54,
       "canonical": false,
@@ -6992,7 +6992,7 @@
       "updated_at": "2026-08-10T20:07:44Z"
     },
     {
-      "age_days": 103,
+      "age_days": 104,
       "archived": false,
       "attention_score": 47,
       "canonical": false,
@@ -7016,7 +7016,7 @@
       "updated_at": "2026-07-30T04:08:46Z"
     },
     {
-      "age_days": 145,
+      "age_days": 146,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7040,7 +7040,7 @@
       "updated_at": "2026-07-30T22:31:33Z"
     },
     {
-      "age_days": 98,
+      "age_days": 99,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7064,7 +7064,7 @@
       "updated_at": "2026-07-30T21:51:13Z"
     },
     {
-      "age_days": 162,
+      "age_days": 163,
       "archived": false,
       "attention_score": 29,
       "canonical": false,
@@ -7088,7 +7088,7 @@
       "updated_at": "2026-07-30T23:47:21Z"
     },
     {
-      "age_days": 45,
+      "age_days": 46,
       "archived": false,
       "attention_score": 27,
       "canonical": false,
@@ -7112,7 +7112,7 @@
       "updated_at": "2026-09-05T10:40:52Z"
     },
     {
-      "age_days": 157,
+      "age_days": 158,
       "archived": false,
       "attention_score": 29,
       "canonical": false,
@@ -7136,7 +7136,7 @@
       "updated_at": "2026-07-30T23:12:10Z"
     },
     {
-      "age_days": 330,
+      "age_days": 331,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7160,9 +7160,9 @@
       "updated_at": "2025-11-26T13:02:50Z"
     },
     {
-      "age_days": 3,
+      "age_days": 4,
       "archived": false,
-      "attention_score": 71,
+      "attention_score": 66,
       "canonical": true,
       "default_branch": "main",
       "description": "VICTOR OS",
@@ -7184,7 +7184,7 @@
       "updated_at": "2026-10-01T01:43:30Z"
     },
     {
-      "age_days": 157,
+      "age_days": 158,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7208,7 +7208,7 @@
       "updated_at": "2026-07-30T23:02:17Z"
     },
     {
-      "age_days": 403,
+      "age_days": 404,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7232,7 +7232,7 @@
       "updated_at": "2025-09-12T08:26:50Z"
     },
     {
-      "age_days": 493,
+      "age_days": 494,
       "archived": false,
       "attention_score": 22,
       "canonical": false,
@@ -7256,7 +7256,7 @@
       "updated_at": "2025-06-13T20:30:13Z"
     },
     {
-      "age_days": 194,
+      "age_days": 195,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -7280,7 +7280,7 @@
       "updated_at": "2026-07-31T00:25:09Z"
     },
     {
-      "age_days": 455,
+      "age_days": 456,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -7304,7 +7304,7 @@
       "updated_at": "2025-07-22T01:47:11Z"
     },
     {
-      "age_days": 324,
+      "age_days": 325,
       "archived": false,
       "attention_score": 20,
       "canonical": false,
@@ -7328,9 +7328,9 @@
       "updated_at": "2025-11-30T01:55:12Z"
     },
     {
-      "age_days": 14,
+      "age_days": 15,
       "archived": false,
-      "attention_score": 38,
+      "attention_score": 32,
       "canonical": false,
       "default_branch": "main",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative \u2014 voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
@@ -7352,7 +7352,7 @@
       "updated_at": "2026-10-06T03:16:30Z"
     },
     {
-      "age_days": 596,
+      "age_days": 597,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -7376,7 +7376,7 @@
       "updated_at": "2025-07-22T15:03:30Z"
     },
     {
-      "age_days": 812,
+      "age_days": 813,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -7400,7 +7400,7 @@
       "updated_at": "2025-08-02T03:44:33Z"
     },
     {
-      "age_days": 436,
+      "age_days": 437,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -7424,7 +7424,7 @@
       "updated_at": "2025-07-31T15:06:58Z"
     },
     {
-      "age_days": 302,
+      "age_days": 303,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -7448,7 +7448,7 @@
       "updated_at": "2025-12-22T15:33:36Z"
     },
     {
-      "age_days": 225,
+      "age_days": 226,
       "archived": false,
       "attention_score": 10,
       "canonical": false,
@@ -7472,7 +7472,7 @@
       "updated_at": "2026-03-09T15:01:21Z"
     },
     {
-      "age_days": 288,
+      "age_days": 289,
       "archived": false,
       "attention_score": 17,
       "canonical": false,
@@ -7498,7 +7498,7 @@
   ],
   "schema_version": 1,
   "summary": {
-    "active_14d": 13,
+    "active_14d": 8,
     "archived": 0,
     "canonical_visible": 16,
     "open_issues_estimate": 7,
@@ -7533,15 +7533,39 @@
       "pillar_name": "iambandobandz / Empire Router",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-10-20T17:12:48Z",
-      "size_kb": 10483,
+      "pushed_at": "2026-10-21T17:16:00Z",
+      "size_kb": 10691,
       "stars": 0,
-      "updated_at": "2026-10-20T17:12:52Z"
+      "updated_at": "2026-10-21T17:16:04Z"
     },
     {
-      "age_days": 3,
+      "age_days": 0,
       "archived": false,
-      "attention_score": 71,
+      "attention_score": 69,
+      "canonical": true,
+      "default_branch": "main",
+      "description": "An AI agent-based complete end-to-end software company simulator that runs on your PC and produces real functional enterprise-grade software and applications.",
+      "fork": false,
+      "forks": 0,
+      "full_name": "MASSIVEMAGNETICS/dev-ville",
+      "html_url": "https://github.com/MASSIVEMAGNETICS/dev-ville",
+      "name": "dev-ville",
+      "open_issues_estimate": 1,
+      "open_items": 3,
+      "open_prs": 2,
+      "pillar_id": "dev_execution",
+      "pillar_name": "Dev-Ville Execution Layer",
+      "pillar_priority": 9,
+      "private": false,
+      "pushed_at": "2026-10-21T15:35:04Z",
+      "size_kb": 494,
+      "stars": 2,
+      "updated_at": "2026-10-21T15:36:49Z"
+    },
+    {
+      "age_days": 4,
+      "archived": false,
+      "attention_score": 66,
       "canonical": true,
       "default_branch": "main",
       "description": "VICTOR OS",
@@ -7563,31 +7587,7 @@
       "updated_at": "2026-10-01T01:43:30Z"
     },
     {
-      "age_days": 0,
-      "archived": false,
-      "attention_score": 69,
-      "canonical": true,
-      "default_branch": "main",
-      "description": "An AI agent-based complete end-to-end software company simulator that runs on your PC and produces real functional enterprise-grade software and applications.",
-      "fork": false,
-      "forks": 0,
-      "full_name": "MASSIVEMAGNETICS/dev-ville",
-      "html_url": "https://github.com/MASSIVEMAGNETICS/dev-ville",
-      "name": "dev-ville",
-      "open_issues_estimate": 1,
-      "open_items": 3,
-      "open_prs": 2,
-      "pillar_id": "dev_execution",
-      "pillar_name": "Dev-Ville Execution Layer",
-      "pillar_priority": 9,
-      "private": false,
-      "pushed_at": "2026-10-20T17:30:05Z",
-      "size_kb": 497,
-      "stars": 2,
-      "updated_at": "2026-10-20T17:30:10Z"
-    },
-    {
-      "age_days": 12,
+      "age_days": 13,
       "archived": false,
       "attention_score": 64,
       "canonical": true,
@@ -7611,7 +7611,7 @@
       "updated_at": "2026-07-30T22:38:33Z"
     },
     {
-      "age_days": 0,
+      "age_days": 1,
       "archived": false,
       "attention_score": 62,
       "canonical": true,
@@ -7629,13 +7629,13 @@
       "pillar_name": "Victor Authority + Continuity",
       "pillar_priority": 10,
       "private": false,
-      "pushed_at": "2026-10-19T19:20:20Z",
-      "size_kb": 421,
+      "pushed_at": "2026-10-20T17:59:14Z",
+      "size_kb": 427,
       "stars": 2,
-      "updated_at": "2026-10-19T19:20:24Z"
+      "updated_at": "2026-10-20T17:59:18Z"
     },
     {
-      "age_days": 35,
+      "age_days": 36,
       "archived": false,
       "attention_score": 54,
       "canonical": false,
@@ -7659,7 +7659,7 @@
       "updated_at": "2026-08-10T20:07:44Z"
     },
     {
-      "age_days": 57,
+      "age_days": 58,
       "archived": false,
       "attention_score": 52,
       "canonical": false,
@@ -7701,13 +7701,13 @@
       "pillar_name": "Music + Catalog Engine",
       "pillar_priority": 9,
       "private": false,
-      "pushed_at": "2026-10-20T17:34:10Z",
-      "size_kb": 21993,
+      "pushed_at": "2026-10-21T17:42:30Z",
+      "size_kb": 21999,
       "stars": 0,
       "updated_at": "2026-08-26T18:15:32Z"
     },
     {
-      "age_days": 103,
+      "age_days": 104,
       "archived": false,
       "attention_score": 47,
       "canonical": false,
@@ -7731,7 +7731,7 @@
       "updated_at": "2026-07-30T04:08:46Z"
     },
     {
-      "age_days": 1,
+      "age_days": 2,
       "archived": false,
       "attention_score": 40,
       "canonical": false,
@@ -7755,103 +7755,7 @@
       "updated_at": "2026-10-01T01:43:26Z"
     },
     {
-      "age_days": 14,
-      "archived": false,
-      "attention_score": 40,
-      "canonical": false,
-      "default_branch": "master",
-      "description": "Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS",
-      "fork": true,
-      "forks": 0,
-      "full_name": "MASSIVEMAGNETICS/caddy-vic",
-      "html_url": "https://github.com/MASSIVEMAGNETICS/caddy-vic",
-      "name": "caddy-vic",
-      "open_issues_estimate": 0,
-      "open_items": 0,
-      "open_prs": 0,
-      "pillar_id": "identity_surface",
-      "pillar_name": "iambandobandz / Empire Router",
-      "pillar_priority": 10,
-      "private": false,
-      "pushed_at": "2026-10-05T22:54:40Z",
-      "size_kb": 21034,
-      "stars": 0,
-      "updated_at": "2026-10-06T03:10:31Z"
-    },
-    {
-      "age_days": 14,
-      "archived": false,
-      "attention_score": 40,
-      "canonical": false,
-      "default_branch": "main",
-      "description": "Persistent Context Across Sessions for Every Agent \u2013  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-      "fork": true,
-      "forks": 0,
-      "full_name": "MASSIVEMAGNETICS/claude-mem-vic",
-      "html_url": "https://github.com/MASSIVEMAGNETICS/claude-mem-vic",
-      "name": "claude-mem-vic",
-      "open_issues_estimate": 0,
-      "open_items": 0,
-      "open_prs": 0,
-      "pillar_id": "victor_core",
-      "pillar_name": "Victor Authority + Continuity",
-      "pillar_priority": 10,
-      "private": false,
-      "pushed_at": "2026-10-06T03:11:30Z",
-      "size_kb": 531339,
-      "stars": 0,
-      "updated_at": "2026-10-06T03:13:06Z"
-    },
-    {
-      "age_days": 14,
-      "archived": false,
-      "attention_score": 40,
-      "canonical": false,
-      "default_branch": "main",
-      "description": "Next generation e2e testing framework for web and mobile apps.",
-      "fork": true,
-      "forks": 0,
-      "full_name": "MASSIVEMAGNETICS/e2e-vic",
-      "html_url": "https://github.com/MASSIVEMAGNETICS/e2e-vic",
-      "name": "e2e-vic",
-      "open_issues_estimate": 0,
-      "open_items": 0,
-      "open_prs": 0,
-      "pillar_id": "identity_surface",
-      "pillar_name": "iambandobandz / Empire Router",
-      "pillar_priority": 10,
-      "private": false,
-      "pushed_at": "2026-10-05T21:55:17Z",
-      "size_kb": 14586,
-      "stars": 0,
-      "updated_at": "2026-10-06T03:10:12Z"
-    },
-    {
-      "age_days": 14,
-      "archived": false,
-      "attention_score": 38,
-      "canonical": false,
-      "default_branch": "main",
-      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative \u2014 voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "fork": true,
-      "forks": 0,
-      "full_name": "MASSIVEMAGNETICS/VoiceStudio-vic",
-      "html_url": "https://github.com/MASSIVEMAGNETICS/VoiceStudio-vic",
-      "name": "VoiceStudio-vic",
-      "open_issues_estimate": 0,
-      "open_items": 0,
-      "open_prs": 0,
-      "pillar_id": "music_engine",
-      "pillar_name": "Music + Catalog Engine",
-      "pillar_priority": 9,
-      "private": false,
-      "pushed_at": "2026-10-05T18:30:38Z",
-      "size_kb": 136458,
-      "stars": 0,
-      "updated_at": "2026-10-06T03:16:30Z"
-    },
-    {
-      "age_days": 60,
+      "age_days": 61,
       "archived": false,
       "attention_score": 37,
       "canonical": true,
@@ -7873,6 +7777,102 @@
       "size_kb": 56,
       "stars": 2,
       "updated_at": "2026-08-21T10:17:17Z"
+    },
+    {
+      "age_days": 159,
+      "archived": false,
+      "attention_score": 37,
+      "canonical": true,
+      "default_branch": "main",
+      "description": "The AI Ear is an outside-the-box, frontier, enterprise-grade AI system that gives machines the ability to truly hear \u2014 not just transcribe, but holistically understand the acoustic world in real time.",
+      "fork": false,
+      "forks": 2,
+      "full_name": "MASSIVEMAGNETICS/the-ai-ear",
+      "html_url": "https://github.com/MASSIVEMAGNETICS/the-ai-ear",
+      "name": "the-ai-ear",
+      "open_issues_estimate": 0,
+      "open_items": 1,
+      "open_prs": 1,
+      "pillar_id": "music_engine",
+      "pillar_name": "Music + Catalog Engine",
+      "pillar_priority": 9,
+      "private": false,
+      "pushed_at": "2026-05-15T06:06:14Z",
+      "size_kb": 180,
+      "stars": 3,
+      "updated_at": "2026-07-30T01:58:53Z"
+    },
+    {
+      "age_days": 187,
+      "archived": false,
+      "attention_score": 37,
+      "canonical": false,
+      "default_branch": "main",
+      "description": "Forge Fractal Agents",
+      "fork": false,
+      "forks": 0,
+      "full_name": "MASSIVEMAGNETICS/NexusForge-2.0-",
+      "html_url": "https://github.com/MASSIVEMAGNETICS/NexusForge-2.0-",
+      "name": "NexusForge-2.0-",
+      "open_issues_estimate": 0,
+      "open_items": 3,
+      "open_prs": 3,
+      "pillar_id": "frontier_rnd",
+      "pillar_name": "Massive Magnetics Frontier R&D",
+      "pillar_priority": 7,
+      "private": false,
+      "pushed_at": "2026-04-16T23:03:22Z",
+      "size_kb": 179,
+      "stars": 2,
+      "updated_at": "2026-07-31T00:09:59Z"
+    },
+    {
+      "age_days": 187,
+      "archived": false,
+      "attention_score": 36,
+      "canonical": false,
+      "default_branch": "main",
+      "description": "Frontier, production-grade, headless AI agent runtime built on a deterministic tick loop, persistent SQLite memory, structured JSONL telemetry, and an adaptive fractal neural core.",
+      "fork": false,
+      "forks": 0,
+      "full_name": "MASSIVEMAGNETICS/VICCTORIAN",
+      "html_url": "https://github.com/MASSIVEMAGNETICS/VICCTORIAN",
+      "name": "VICCTORIAN",
+      "open_issues_estimate": 0,
+      "open_items": 2,
+      "open_prs": 2,
+      "pillar_id": "victor_core",
+      "pillar_name": "Victor Authority + Continuity",
+      "pillar_priority": 10,
+      "private": false,
+      "pushed_at": "2026-04-16T22:54:47Z",
+      "size_kb": 58,
+      "stars": 1,
+      "updated_at": "2026-07-31T00:12:37Z"
+    },
+    {
+      "age_days": 6,
+      "archived": false,
+      "attention_score": 35,
+      "canonical": false,
+      "default_branch": "main",
+      "description": "A local-only ChatGPT Export Explorer and Model Foundry that transforms raw chat history into richly structured semantic data.",
+      "fork": false,
+      "forks": 0,
+      "full_name": "MASSIVEMAGNETICS/chatgpt-export-studio",
+      "html_url": "https://github.com/MASSIVEMAGNETICS/chatgpt-export-studio",
+      "name": "chatgpt-export-studio",
+      "open_issues_estimate": 0,
+      "open_items": 1,
+      "open_prs": 1,
+      "pillar_id": "supporting_lattice",
+      "pillar_name": "Supporting Lattice",
+      "pillar_priority": 4,
+      "private": false,
+      "pushed_at": "2026-10-14T23:18:37Z",
+      "size_kb": 470,
+      "stars": 2,
+      "updated_at": "2026-05-14T18:25:50Z"
     }
   ]
 }
