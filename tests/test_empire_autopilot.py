@@ -21,6 +21,16 @@ class EmpireAutopilotTests(unittest.TestCase):
         pillar = ea.classify_repo(repo, self.manifest)
         self.assertEqual(pillar["id"], "victor_core")
 
+    def test_sunokiller_is_canonical_music_repo(self):
+        repo = {
+            "full_name": "MASSIVEMAGNETICS/SUNOKILLER",
+            "name": "SUNOKILLER",
+            "description": "sovereign local audio runtime",
+        }
+        pillar = ea.classify_repo(repo, self.manifest)
+        self.assertEqual(pillar["id"], "music_engine")
+        self.assertIn("MASSIVEMAGNETICS/SUNOKILLER", pillar["canonical_repos"])
+
     def test_pattern_classification(self):
         repo = {
             "full_name": "MASSIVEMAGNETICS/example-audio-engine",

@@ -52,7 +52,7 @@
       "priority": 9,
       "patterns": ["suno", "song", "music", "audio", "voice", "starpower", "steel-city", "ai-ear", "ace-step", "resonance", "master"],
       "canonical_repos": [
-        "MASSIVEMAGNETICS/suno-killer",
+        "MASSIVEMAGNETICS/SUNOKILLER",
         "MASSIVEMAGNETICS/victor-suno-godcore",
         "MASSIVEMAGNETICS/massive_starpower",
         "MASSIVEMAGNETICS/the-ai-ear"
