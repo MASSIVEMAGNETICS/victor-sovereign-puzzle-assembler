@@ -1,6 +1,6 @@
 # Empire Status
 
-**Generated:** 2026-11-10T20:28:09.836071+00:00  
+**Generated:** 2026-11-11T20:12:15.591817+00:00  
 **Owner:** `MASSIVEMAGNETICS`  
 **Mode:** `observe-plan-assemble-local`
 
@@ -19,7 +19,7 @@ The daily run observes the lattice, runs Victor's local assembler, writes state,
 | Active in last 14 days | 5 |
 | Archived | 0 |
 | Private visible | 0 |
-| Open PRs discovered | 71 |
+| Open PRs discovered | 70 |
 | Estimated open issues | 8 |
 
 ## Empire Skin / Pillars
@@ -28,7 +28,7 @@ The daily run observes the lattice, runs Victor's local assembler, writes state,
 |---|---:|---:|---:|---:|---:|
 | iambandobandz / Empire Router | 11 | 1 | 1 | 6 | 3 |
 | Victor Authority + Continuity | 90 | 5 | 2 | 33 | 3 |
-| Dev-Ville Execution Layer | 6 | 3 | 1 | 7 | 2 |
+| Dev-Ville Execution Layer | 6 | 3 | 1 | 6 | 2 |
 | Music + Catalog Engine | 25 | 3 | 1 | 3 | 0 |
 | B Heard Network | 0 | 0 | 0 | 0 | 0 |
 | Truth Compiler + Revenue | 5 | 1 | 0 | 0 | 0 |
@@ -42,35 +42,35 @@ The attention score is a routing heuristic, not a quality score. It combines str
 | Score | Repository | Pillar | Age | PRs | ~Issues |
 |---:|---|---|---:|---:|---:|
 | 86 | [MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io) | iambandobandz / Empire Router | 0d | 5 | 3 |
-| 77 | [MASSIVEMAGNETICS/dev-ville](https://github.com/MASSIVEMAGNETICS/dev-ville) | Dev-Ville Execution Layer | 6d | 6 | 2 |
-| 71 | [MASSIVEMAGNETICS/victorOS](https://github.com/MASSIVEMAGNETICS/victorOS) | Victor Authority + Continuity | 1d | 2 | 1 |
+| 82 | [MASSIVEMAGNETICS/dev-ville](https://github.com/MASSIVEMAGNETICS/dev-ville) | Dev-Ville Execution Layer | 0d | 5 | 2 |
+| 71 | [MASSIVEMAGNETICS/victorOS](https://github.com/MASSIVEMAGNETICS/victorOS) | Victor Authority + Continuity | 0d | 2 | 1 |
 | 62 | [MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler](https://github.com/MASSIVEMAGNETICS/victor-sovereign-puzzle-assembler) | Victor Authority + Continuity | 0d | 1 | 0 |
-| 54 | [MASSIVEMAGNETICS/victor_empire](https://github.com/MASSIVEMAGNETICS/victor_empire) | Victor Authority + Continuity | 56d | 4 | 1 |
-| 52 | [MASSIVEMAGNETICS/VICTOR-SSI](https://github.com/MASSIVEMAGNETICS/VICTOR-SSI) | Victor Authority + Continuity | 78d | 11 | 0 |
-| 51 | [MASSIVEMAGNETICS/omni](https://github.com/MASSIVEMAGNETICS/omni) | Victor Authority + Continuity | 33d | 2 | 0 |
+| 54 | [MASSIVEMAGNETICS/victor_empire](https://github.com/MASSIVEMAGNETICS/victor_empire) | Victor Authority + Continuity | 57d | 4 | 1 |
+| 52 | [MASSIVEMAGNETICS/VICTOR-SSI](https://github.com/MASSIVEMAGNETICS/VICTOR-SSI) | Victor Authority + Continuity | 79d | 11 | 0 |
+| 51 | [MASSIVEMAGNETICS/omni](https://github.com/MASSIVEMAGNETICS/omni) | Victor Authority + Continuity | 34d | 2 | 0 |
 | 50 | [MASSIVEMAGNETICS/starpower-core](https://github.com/MASSIVEMAGNETICS/starpower-core) | Music + Catalog Engine | 0d | 1 | 0 |
-| 47 | [MASSIVEMAGNETICS/victor_llm](https://github.com/MASSIVEMAGNETICS/victor_llm) | Victor Authority + Continuity | 124d | 5 | 0 |
-| 37 | [MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator) | Victor Authority + Continuity | 81d | 0 | 0 |
-| 37 | [MASSIVEMAGNETICS/the-ai-ear](https://github.com/MASSIVEMAGNETICS/the-ai-ear) | Music + Catalog Engine | 179d | 1 | 0 |
-| 37 | [MASSIVEMAGNETICS/NexusForge-2.0-](https://github.com/MASSIVEMAGNETICS/NexusForge-2.0-) | Massive Magnetics Frontier R&D | 207d | 3 | 0 |
-| 36 | [MASSIVEMAGNETICS/VICCTORIAN](https://github.com/MASSIVEMAGNETICS/VICCTORIAN) | Victor Authority + Continuity | 207d | 2 | 0 |
-| 35 | [MASSIVEMAGNETICS/victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore) | Music + Catalog Engine | 85d | 0 | 0 |
-| 34 | [MASSIVEMAGNETICS/MASSIVEMAGNETICS-IP](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS-IP) | Victor Authority + Continuity | 88d | 1 | 0 |
+| 47 | [MASSIVEMAGNETICS/victor_llm](https://github.com/MASSIVEMAGNETICS/victor_llm) | Victor Authority + Continuity | 125d | 5 | 0 |
+| 37 | [MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator) | Victor Authority + Continuity | 82d | 0 | 0 |
+| 37 | [MASSIVEMAGNETICS/the-ai-ear](https://github.com/MASSIVEMAGNETICS/the-ai-ear) | Music + Catalog Engine | 180d | 1 | 0 |
+| 37 | [MASSIVEMAGNETICS/NexusForge-2.0-](https://github.com/MASSIVEMAGNETICS/NexusForge-2.0-) | Massive Magnetics Frontier R&D | 208d | 3 | 0 |
+| 36 | [MASSIVEMAGNETICS/VICCTORIAN](https://github.com/MASSIVEMAGNETICS/VICCTORIAN) | Victor Authority + Continuity | 208d | 2 | 0 |
+| 35 | [MASSIVEMAGNETICS/victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore) | Music + Catalog Engine | 86d | 0 | 0 |
+| 34 | [MASSIVEMAGNETICS/MASSIVEMAGNETICS-IP](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS-IP) | Victor Authority + Continuity | 89d | 1 | 0 |
 
 ## Next Assembly Queue
 
 1. **P0 — [Review draft PR #22: Issue #19: transactional outbox for cognitive scheduler](https://github.com/MASSIVEMAGNETICS/victorOS/pull/22)** — GitHub marks the pull request as draft.
-2. **P0 — [Review draft PR #41: fix(chronos): fail closed when JSONL persistence is uncertain](https://github.com/MASSIVEMAGNETICS/dev-ville/pull/41)** — GitHub marks the pull request as draft.
-3. **P0 — [Review draft PR #57: feat(bheard): signed Stripe-to-D1 order intake candidate (independent backend)](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io/pull/57)** — GitHub marks the pull request as draft.
-4. **P0 — [Review draft PR #39: bench(vsg1): measure lossless Chronos event adapter against JSON/zlib](https://github.com/MASSIVEMAGNETICS/dev-ville/pull/39)** — GitHub marks the pull request as draft.
-5. **P0 — [Review merge candidate PR #36: feat: VSG1 offline structural representation benchmark](https://github.com/MASSIVEMAGNETICS/dev-ville/pull/36)** — No explicit draft/donor/review-only blocker was found. This is a review candidate only; merge still requires independent verification and approval.
-6. **P1 — [Triage stale canonical repo: victor-whole](https://github.com/MASSIVEMAGNETICS/victor-whole)** — Canonical repo has not been pushed in 135 days.
-7. **P1 — [Triage stale canonical repo: Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator)** — Canonical repo has not been pushed in 81 days.
-8. **P1 — [Triage stale canonical repo: omni](https://github.com/MASSIVEMAGNETICS/omni)** — Canonical repo has not been pushed in 33 days.
-9. **P1 — [Triage stale canonical repo: repo-brain](https://github.com/MASSIVEMAGNETICS/repo-brain)** — Canonical repo has not been pushed in 222 days.
-10. **P1 — [Triage stale canonical repo: victor-os-autodeploy](https://github.com/MASSIVEMAGNETICS/victor-os-autodeploy)** — Canonical repo has not been pushed in 171 days.
+2. **P0 — [Review draft PR #38: test/security: harden VSG1 decoder bounds and malformed-frame handling](https://github.com/MASSIVEMAGNETICS/dev-ville/pull/38)** — GitHub marks the pull request as draft.
+3. **P0 — [Review draft PR #41: fix(chronos): fail closed when JSONL persistence is uncertain](https://github.com/MASSIVEMAGNETICS/dev-ville/pull/41)** — GitHub marks the pull request as draft.
+4. **P0 — [Review draft PR #57: feat(bheard): signed Stripe-to-D1 order intake candidate (independent backend)](https://github.com/MASSIVEMAGNETICS/MASSIVEMAGNETICS.github.io/pull/57)** — GitHub marks the pull request as draft.
+5. **P0 — [Review draft PR #39: bench(vsg1): measure lossless Chronos event adapter against JSON/zlib](https://github.com/MASSIVEMAGNETICS/dev-ville/pull/39)** — GitHub marks the pull request as draft.
+6. **P1 — [Triage stale canonical repo: victor-whole](https://github.com/MASSIVEMAGNETICS/victor-whole)** — Canonical repo has not been pushed in 136 days.
+7. **P1 — [Triage stale canonical repo: Victor-Synthetic-Orchestrator](https://github.com/MASSIVEMAGNETICS/Victor-Synthetic-Orchestrator)** — Canonical repo has not been pushed in 82 days.
+8. **P1 — [Triage stale canonical repo: omni](https://github.com/MASSIVEMAGNETICS/omni)** — Canonical repo has not been pushed in 34 days.
+9. **P1 — [Triage stale canonical repo: repo-brain](https://github.com/MASSIVEMAGNETICS/repo-brain)** — Canonical repo has not been pushed in 223 days.
+10. **P1 — [Triage stale canonical repo: victor-os-autodeploy](https://github.com/MASSIVEMAGNETICS/victor-os-autodeploy)** — Canonical repo has not been pushed in 172 days.
 11. **P1 — Resolve unseen canonical repo: MASSIVEMAGNETICS/suno-killer** — Manifest expects this repository, but authenticated owner/private inventory coverage is incomplete. Verify repository visibility, existence, and canonical role before changing the manifest or attempting recovery.
-12. **P1 — [Triage stale canonical repo: victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore)** — Canonical repo has not been pushed in 85 days.
+12. **P1 — [Triage stale canonical repo: victor-suno-godcore](https://github.com/MASSIVEMAGNETICS/victor-suno-godcore)** — Canonical repo has not been pushed in 86 days.
 
 ## Coverage Warnings
 
