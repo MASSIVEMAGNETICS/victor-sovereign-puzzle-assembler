@@ -81,6 +81,7 @@ class EmpireAutopilotTests(unittest.TestCase):
             "generated_at": "2026-08-23T12:00:00+00:00",
             "owner": "MASSIVEMAGNETICS",
             "mode": "observe-plan-assemble-local",
+            "private_inventory_status": "not_attempted_no_token",
             "summary": {
                 "visible_repositories": 1,
                 "canonical_visible": 1,
@@ -116,6 +117,7 @@ class EmpireAutopilotTests(unittest.TestCase):
         }
         markdown = ea.render_markdown(state)
         self.assertIn("Bippity Boppity Boop Loop", markdown)
+        self.assertIn("| Private inventory coverage | not_attempted_no_token |", markdown)
         self.assertIn("```mermaid", markdown)
 
         with tempfile.TemporaryDirectory() as td:
@@ -126,6 +128,64 @@ class EmpireAutopilotTests(unittest.TestCase):
             self.assertTrue(report_path.exists())
             loaded = json.loads(state_path.read_text(encoding="utf-8"))
             self.assertEqual(loaded["owner"], "MASSIVEMAGNETICS")
+
+
+    def test_private_inventory_is_not_complete_without_token(self):
+        api = ea.GitHubAPI(token=None)
+        api.paginated = lambda path, params=None, max_pages=20: []
+
+        ea.list_owner_repos(api, "MASSIVEMAGNETICS", include_private=True)
+
+        self.assertFalse(api.private_inventory_attempted)
+        self.assertFalse(api.private_inventory_complete)
+        self.assertEqual(api.private_inventory_status, "not_attempted_no_token")
+
+    def test_public_only_scan_does_not_claim_private_inventory_complete(self):
+        api = ea.GitHubAPI(token=None)
+        api.paginated = lambda path, params=None, max_pages=20: []
+
+        ea.list_owner_repos(api, "MASSIVEMAGNETICS", include_private=False)
+
+        self.assertFalse(api.private_inventory_attempted)
+        self.assertFalse(api.private_inventory_complete)
+        self.assertEqual(api.private_inventory_status, "not_requested")
+
+    def test_private_inventory_is_complete_only_after_authenticated_read(self):
+        api = ea.GitHubAPI(token="test-token")
+        calls = []
+
+        def fake_paginated(path, params=None, max_pages=20):
+            calls.append(path)
+            if path == "/user/repos":
+                return [{
+                    "full_name": "MASSIVEMAGNETICS/private-repo",
+                    "owner": {"login": "MASSIVEMAGNETICS"},
+                }]
+            return []
+
+        api.paginated = fake_paginated
+        repos = ea.list_owner_repos(api, "MASSIVEMAGNETICS", include_private=True)
+
+        self.assertEqual(calls, ["/users/MASSIVEMAGNETICS/repos", "/user/repos"])
+        self.assertIn("MASSIVEMAGNETICS/private-repo", [repo["full_name"] for repo in repos])
+        self.assertTrue(api.private_inventory_attempted)
+        self.assertTrue(api.private_inventory_complete)
+        self.assertEqual(api.private_inventory_status, "complete")
+
+    def test_private_inventory_failure_is_explicit(self):
+        api = ea.GitHubAPI(token="test-token")
+
+        def fake_paginated(path, params=None, max_pages=20):
+            if path == "/user/repos":
+                raise ea.GitHubAPIError("private inventory denied")
+            return []
+
+        api.paginated = fake_paginated
+        ea.list_owner_repos(api, "MASSIVEMAGNETICS", include_private=True)
+
+        self.assertTrue(api.private_inventory_attempted)
+        self.assertFalse(api.private_inventory_complete)
+        self.assertEqual(api.private_inventory_status, "failed")
 
 
 if __name__ == "__main__":

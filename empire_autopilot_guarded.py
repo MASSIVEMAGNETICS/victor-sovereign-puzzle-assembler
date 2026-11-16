@@ -169,16 +169,24 @@ def build_next_actions_guarded(
     return guarded
 
 
-def _private_inventory_incomplete(api_errors: Any) -> bool:
-    """Return True when the authenticated owner/private inventory could not be read."""
+def _private_inventory_incomplete(api_errors: Any, private_inventory_complete: Any = None) -> bool:
+    """Return True unless private inventory coverage was explicitly verified.
 
+    Legacy state snapshots without the coverage field retain the prior error-based
+    interpretation. New snapshots carry the explicit boolean from the base scanner.
+    """
+
+    if isinstance(private_inventory_complete, bool):
+        return not private_inventory_complete
     return any(_PRIVATE_INVENTORY_ENDPOINT in str(error) for error in (api_errors or []))
 
 
 def _qualify_unseen_canonical_actions(state: Dict[str, Any]) -> None:
     """Prevent incomplete private coverage from being presented as repo nonexistence."""
 
-    if not _private_inventory_incomplete(state.get("api_errors")):
+    if not _private_inventory_incomplete(
+        state.get("api_errors"), state.get("private_inventory_complete")
+    ):
         return
 
     qualified: List[Dict[str, Any]] = []
@@ -204,7 +212,14 @@ def build_state_guarded(*args: Any, **kwargs: Any) -> Dict[str, Any]:
 
     state = _ORIGINAL_BUILD_STATE(*args, **kwargs)
     state["receipt_generator"] = _RECEIPT_GENERATOR
-    state["private_inventory_complete"] = not _private_inventory_incomplete(state.get("api_errors"))
+    if "private_inventory_complete" not in state:
+        state["private_inventory_complete"] = not _private_inventory_incomplete(state.get("api_errors"))
+    if "private_inventory_attempted" not in state:
+        state["private_inventory_attempted"] = not _private_inventory_incomplete(state.get("api_errors"))
+    if "private_inventory_status" not in state:
+        state["private_inventory_status"] = (
+            "complete" if state["private_inventory_complete"] else "incomplete"
+        )
     _qualify_unseen_canonical_actions(state)
     return state
 

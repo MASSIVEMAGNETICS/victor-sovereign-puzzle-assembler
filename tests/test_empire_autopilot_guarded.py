@@ -359,5 +359,37 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             guarded._ORIGINAL_RENDER_MARKDOWN = original
 
 
+    def test_not_attempted_private_inventory_qualifies_unseen_canonical_repo(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        base_state = {
+            "api_errors": [],
+            "private_inventory_attempted": False,
+            "private_inventory_complete": False,
+            "private_inventory_status": "not_attempted_no_token",
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "repo": "MASSIVEMAGNETICS/private-canonical",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/private-canonical",
+                    "reason": "Manifest expects this repository but the current scan could not see it.",
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertFalse(state["private_inventory_attempted"])
+        self.assertFalse(state["private_inventory_complete"])
+        self.assertEqual(state["private_inventory_status"], "not_attempted_no_token")
+        self.assertEqual(
+            state["next_actions"][0]["title"],
+            "Resolve unseen canonical repo: MASSIVEMAGNETICS/private-canonical",
+        )
+        self.assertIn("coverage is incomplete", state["next_actions"][0]["reason"])
+
+
 if __name__ == "__main__":
     unittest.main()
