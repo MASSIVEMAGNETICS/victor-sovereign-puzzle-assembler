@@ -1,5 +1,4 @@
 import json
-import logging
 import tempfile
 import unittest
 from pathlib import Path
@@ -12,16 +11,14 @@ class AssemblerRemCycleAccountingTests(unittest.TestCase):
     def _run(self, rem_cycles, initial_state=None):
         with tempfile.TemporaryDirectory() as directory:
             state_path = Path(directory) / "victor_state.json"
-            previous_state_file = assembler_module.STATE_FILE
-            assembler_module.STATE_FILE = state_path
-            logging.disable(logging.CRITICAL)
-            try:
-                if initial_state is not None:
-                    state_path.write_text(json.dumps(initial_state), encoding="utf-8")
-                assembler = assembler_module.VictorPuzzleAssembler(
-                    autonomous=True,
-                    rem_cycles=rem_cycles,
-                )
+            if initial_state is not None:
+                state_path.write_text(json.dumps(initial_state), encoding="utf-8")
+
+            assembler = assembler_module.VictorPuzzleAssembler(
+                autonomous=True,
+                rem_cycles=rem_cycles,
+            )
+            with patch.object(assembler_module, "STATE_FILE", state_path):
                 if initial_state is not None:
                     assembler.load_state()
                 assembler.discover_pieces()
@@ -30,10 +27,7 @@ class AssemblerRemCycleAccountingTests(unittest.TestCase):
                 with patch.object(assembler_module.time, "sleep", return_value=None):
                     assembler.autonomous_loop()
                 persisted = json.loads(state_path.read_text(encoding="utf-8"))
-                return assembler.context, persisted
-            finally:
-                assembler_module.STATE_FILE = previous_state_file
-                logging.disable(logging.NOTSET)
+            return assembler.context, persisted
 
     def test_fresh_run_counts_exactly_the_requested_cycles(self):
         context, persisted = self._run(rem_cycles=3)
