@@ -289,7 +289,7 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
         self.assertIn("private inventory coverage is incomplete", state["next_actions"][0]["reason"])
         self.assertNotIn("missing canonical repo", state["next_actions"][0]["title"].lower())
 
-    def test_complete_private_inventory_preserves_missing_canonical_wording(self):
+    def test_token_visible_inventory_does_not_prove_canonical_absence(self):
         original = guarded._ORIGINAL_BUILD_STATE
         base_state = {
             "api_errors": [],
@@ -313,6 +313,37 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             guarded._ORIGINAL_BUILD_STATE = original
 
         self.assertTrue(state["private_inventory_complete"])
+        self.assertEqual(
+            state["next_actions"][0]["title"],
+            "Resolve unseen canonical repo: MASSIVEMAGNETICS/actually-missing",
+        )
+        self.assertIn("coverage is incomplete", state["next_actions"][0]["reason"])
+
+    def test_owner_authoritative_inventory_preserves_missing_canonical_wording(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        base_state = {
+            "api_errors": [],
+            "private_inventory_attempted": True,
+            "private_inventory_complete": True,
+            "private_inventory_status": "complete",
+            "private_inventory_scope": "owner_authoritative",
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "repo": "MASSIVEMAGNETICS/actually-missing",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/actually-missing",
+                    "reason": "Manifest expects this repo but the current scan could not see it.",
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertTrue(state["private_inventory_complete"])
+        self.assertEqual(state["private_inventory_scope"], "owner_authoritative")
         self.assertIn("Resolve missing canonical repo", state["next_actions"][0]["title"])
 
     def test_private_inventory_qualification_preserves_non_recovery_actions(self):

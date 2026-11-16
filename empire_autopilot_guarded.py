@@ -169,23 +169,30 @@ def build_next_actions_guarded(
     return guarded
 
 
-def _private_inventory_incomplete(api_errors: Any, private_inventory_complete: Any = None) -> bool:
-    """Return True unless private inventory coverage was explicitly verified.
+def _private_inventory_incomplete(
+    private_inventory_complete: Any = None,
+    private_inventory_scope: Any = None,
+) -> bool:
+    """Return True unless owner-wide private visibility is explicitly authoritative.
 
-    Legacy snapshots without an explicit coverage boolean are unverified even when
-    they contain no API error; absence of an error is not evidence that a scan ran.
+    A completed /user/repos pagination proves only the credential's token-visible
+    view. It cannot prove that an absent private repository does not exist. Only a
+    future source that establishes owner-wide authority may use owner_authoritative;
+    the current collector emits token_visible.
     """
 
-    if isinstance(private_inventory_complete, bool):
-        return not private_inventory_complete
-    return True
+    return not (
+        private_inventory_complete is True
+        and private_inventory_scope == "owner_authoritative"
+    )
 
 
 def _qualify_unseen_canonical_actions(state: Dict[str, Any]) -> None:
-    """Prevent incomplete private coverage from being presented as repo nonexistence."""
+    """Prevent token-visible subsets from being presented as proof of repo nonexistence."""
 
     if not _private_inventory_incomplete(
-        state.get("api_errors"), state.get("private_inventory_complete")
+        state.get("private_inventory_complete"),
+        state.get("private_inventory_scope"),
     ):
         return
 
