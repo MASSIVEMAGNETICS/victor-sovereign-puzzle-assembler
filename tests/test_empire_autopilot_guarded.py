@@ -222,7 +222,38 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             guarded._ORIGINAL_BUILD_STATE = original
 
         self.assertEqual(state["receipt_generator"], "empire_autopilot_guarded.py")
-        self.assertTrue(state["private_inventory_complete"])
+        self.assertFalse(state["private_inventory_complete"])
+        self.assertFalse(state["private_inventory_attempted"])
+        self.assertEqual(state["private_inventory_status"], "unknown")
+        self.assertEqual(state["private_inventory_scope"], "unknown")
+
+    def test_legacy_state_without_coverage_or_errors_fails_closed(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        base_state = {
+            "api_errors": [],
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "priority": "P1",
+                    "repo": "MASSIVEMAGNETICS/suno-killer",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/suno-killer",
+                    "reason": "Manifest expects this repo but the current scan could not see it.",
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertFalse(state["private_inventory_complete"])
+        self.assertFalse(state["private_inventory_attempted"])
+        self.assertEqual(state["private_inventory_status"], "unknown")
+        self.assertEqual(
+            state["next_actions"][0]["title"],
+            "Resolve unseen canonical repo: MASSIVEMAGNETICS/suno-killer",
+        )
 
     def test_private_inventory_failure_qualifies_unseen_canonical_repo(self):
         original = guarded._ORIGINAL_BUILD_STATE
@@ -262,6 +293,10 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
         original = guarded._ORIGINAL_BUILD_STATE
         base_state = {
             "api_errors": [],
+            "private_inventory_attempted": True,
+            "private_inventory_complete": True,
+            "private_inventory_status": "complete",
+            "private_inventory_scope": "token_visible",
             "next_actions": [
                 {
                     "kind": "recover_canonical_repo",

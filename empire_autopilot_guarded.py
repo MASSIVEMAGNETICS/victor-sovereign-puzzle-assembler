@@ -172,13 +172,13 @@ def build_next_actions_guarded(
 def _private_inventory_incomplete(api_errors: Any, private_inventory_complete: Any = None) -> bool:
     """Return True unless private inventory coverage was explicitly verified.
 
-    Legacy state snapshots without the coverage field retain the prior error-based
-    interpretation. New snapshots carry the explicit boolean from the base scanner.
+    Legacy snapshots without an explicit coverage boolean are unverified even when
+    they contain no API error; absence of an error is not evidence that a scan ran.
     """
 
     if isinstance(private_inventory_complete, bool):
         return not private_inventory_complete
-    return any(_PRIVATE_INVENTORY_ENDPOINT in str(error) for error in (api_errors or []))
+    return True
 
 
 def _qualify_unseen_canonical_actions(state: Dict[str, Any]) -> None:
@@ -212,14 +212,25 @@ def build_state_guarded(*args: Any, **kwargs: Any) -> Dict[str, Any]:
 
     state = _ORIGINAL_BUILD_STATE(*args, **kwargs)
     state["receipt_generator"] = _RECEIPT_GENERATOR
-    if "private_inventory_complete" not in state:
-        state["private_inventory_complete"] = not _private_inventory_incomplete(state.get("api_errors"))
-    if "private_inventory_attempted" not in state:
-        state["private_inventory_attempted"] = not _private_inventory_incomplete(state.get("api_errors"))
-    if "private_inventory_status" not in state:
-        state["private_inventory_status"] = (
-            "complete" if state["private_inventory_complete"] else "incomplete"
-        )
+    private_inventory_errors = any(
+        _PRIVATE_INVENTORY_ENDPOINT in str(error)
+        for error in (state.get("api_errors") or [])
+    )
+    if not isinstance(state.get("private_inventory_complete"), bool):
+        state["private_inventory_complete"] = False
+    if not isinstance(state.get("private_inventory_attempted"), bool):
+        state["private_inventory_attempted"] = private_inventory_errors
+    if not isinstance(state.get("private_inventory_status"), str) or not state["private_inventory_status"]:
+        if state["private_inventory_complete"]:
+            state["private_inventory_status"] = "complete"
+        elif private_inventory_errors:
+            state["private_inventory_status"] = "failed"
+        elif state["private_inventory_attempted"]:
+            state["private_inventory_status"] = "incomplete"
+        else:
+            state["private_inventory_status"] = "unknown"
+    if not isinstance(state.get("private_inventory_scope"), str) or not state["private_inventory_scope"]:
+        state["private_inventory_scope"] = "unknown"
     _qualify_unseen_canonical_actions(state)
     return state
 

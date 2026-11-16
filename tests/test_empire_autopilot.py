@@ -82,6 +82,7 @@ class EmpireAutopilotTests(unittest.TestCase):
             "owner": "MASSIVEMAGNETICS",
             "mode": "observe-plan-assemble-local",
             "private_inventory_status": "not_attempted_no_token",
+            "private_inventory_scope": "none",
             "summary": {
                 "visible_repositories": 1,
                 "canonical_visible": 1,
@@ -118,6 +119,7 @@ class EmpireAutopilotTests(unittest.TestCase):
         markdown = ea.render_markdown(state)
         self.assertIn("Bippity Boppity Boop Loop", markdown)
         self.assertIn("| Private inventory coverage | not_attempted_no_token |", markdown)
+        self.assertIn("| Private inventory scope | none |", markdown)
         self.assertIn("```mermaid", markdown)
 
         with tempfile.TemporaryDirectory() as td:
@@ -130,6 +132,36 @@ class EmpireAutopilotTests(unittest.TestCase):
             self.assertEqual(loaded["owner"], "MASSIVEMAGNETICS")
 
 
+    def test_pagination_limit_probes_one_extra_page_before_declaring_complete(self):
+        api = ea.GitHubAPI(token="test-token")
+
+        def fake_get_json(path, params=None):
+            page = int(params["page"])
+            if page <= 2:
+                return [{"page": page, "item": index} for index in range(2)]
+            return []
+
+        api.get_json = fake_get_json
+        results = api.paginated("/user/repos", {"per_page": 2}, max_pages=2)
+
+        self.assertEqual(len(results), 4)
+        self.assertEqual(api.errors, [])
+
+    def test_pagination_limit_fails_closed_when_more_pages_exist(self):
+        api = ea.GitHubAPI(token="test-token")
+
+        def fake_get_json(path, params=None):
+            page = int(params["page"])
+            if page <= 2:
+                return [{"page": page, "item": index} for index in range(2)]
+            return [{"page": page, "item": 0}]
+
+        api.get_json = fake_get_json
+        with self.assertRaisesRegex(ea.GitHubAPIError, "pagination limit reached"):
+            api.paginated("/user/repos", {"per_page": 2}, max_pages=2)
+
+        self.assertTrue(any("pagination limit reached" in error.lower() for error in api.errors))
+
     def test_private_inventory_is_not_complete_without_token(self):
         api = ea.GitHubAPI(token=None)
         api.paginated = lambda path, params=None, max_pages=20: []
@@ -139,6 +171,7 @@ class EmpireAutopilotTests(unittest.TestCase):
         self.assertFalse(api.private_inventory_attempted)
         self.assertFalse(api.private_inventory_complete)
         self.assertEqual(api.private_inventory_status, "not_attempted_no_token")
+        self.assertEqual(api.private_inventory_scope, "none")
 
     def test_public_only_scan_does_not_claim_private_inventory_complete(self):
         api = ea.GitHubAPI(token=None)
@@ -149,6 +182,7 @@ class EmpireAutopilotTests(unittest.TestCase):
         self.assertFalse(api.private_inventory_attempted)
         self.assertFalse(api.private_inventory_complete)
         self.assertEqual(api.private_inventory_status, "not_requested")
+        self.assertEqual(api.private_inventory_scope, "not_requested")
 
     def test_private_inventory_is_complete_only_after_authenticated_read(self):
         api = ea.GitHubAPI(token="test-token")
@@ -171,6 +205,7 @@ class EmpireAutopilotTests(unittest.TestCase):
         self.assertTrue(api.private_inventory_attempted)
         self.assertTrue(api.private_inventory_complete)
         self.assertEqual(api.private_inventory_status, "complete")
+        self.assertEqual(api.private_inventory_scope, "token_visible")
 
     def test_private_inventory_failure_is_explicit(self):
         api = ea.GitHubAPI(token="test-token")
