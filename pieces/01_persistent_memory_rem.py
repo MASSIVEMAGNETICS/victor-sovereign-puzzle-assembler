@@ -23,8 +23,10 @@ def assemble(context):
 
 def rem_cycle(context):
     """Simulate a REM-style memory consolidation and reflection pass."""
+    # The assembler loop index is local to a run; this counter remains cumulative.
     cycle = context.get("rem_cycle_count", 0) + 1
     context["rem_cycle_count"] = cycle
+    context["rem_cycles_completed"] = cycle
 
     # Simple consolidation logic (expand with real graph later)
     if "recent_signals" not in context:

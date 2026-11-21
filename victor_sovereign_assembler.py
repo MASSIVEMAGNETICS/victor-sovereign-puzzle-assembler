@@ -165,7 +165,7 @@ class VictorPuzzleAssembler:
     def run_rem_cycle(self, cycle_num: int) -> None:
         """Run a REM-style persistence and reflection cycle across pieces."""
         logger.info(f"\n=== REM CYCLE {cycle_num} ===")
-        self.context["rem_cycle_count"] = cycle_num
+        # The memory piece owns the cumulative counter across fresh and restored runs.
 
         for piece_name, piece in self.pieces.items():
             rem_fn = piece.get("rem_cycle")
