@@ -169,16 +169,31 @@ def build_next_actions_guarded(
     return guarded
 
 
-def _private_inventory_incomplete(api_errors: Any) -> bool:
-    """Return True when the authenticated owner/private inventory could not be read."""
+def _private_inventory_incomplete(
+    private_inventory_complete: Any = None,
+    private_inventory_scope: Any = None,
+) -> bool:
+    """Return True unless owner-wide private visibility is explicitly authoritative.
 
-    return any(_PRIVATE_INVENTORY_ENDPOINT in str(error) for error in (api_errors or []))
+    A completed /user/repos pagination proves only the credential's token-visible
+    view. It cannot prove that an absent private repository does not exist. Only a
+    future source that establishes owner-wide authority may use owner_authoritative;
+    the current collector emits token_visible.
+    """
+
+    return not (
+        private_inventory_complete is True
+        and private_inventory_scope == "owner_authoritative"
+    )
 
 
 def _qualify_unseen_canonical_actions(state: Dict[str, Any]) -> None:
-    """Prevent incomplete private coverage from being presented as repo nonexistence."""
+    """Prevent token-visible subsets from being presented as proof of repo nonexistence."""
 
-    if not _private_inventory_incomplete(state.get("api_errors")):
+    if not _private_inventory_incomplete(
+        state.get("private_inventory_complete"),
+        state.get("private_inventory_scope"),
+    ):
         return
 
     qualified: List[Dict[str, Any]] = []
@@ -204,7 +219,25 @@ def build_state_guarded(*args: Any, **kwargs: Any) -> Dict[str, Any]:
 
     state = _ORIGINAL_BUILD_STATE(*args, **kwargs)
     state["receipt_generator"] = _RECEIPT_GENERATOR
-    state["private_inventory_complete"] = not _private_inventory_incomplete(state.get("api_errors"))
+    private_inventory_errors = any(
+        _PRIVATE_INVENTORY_ENDPOINT in str(error)
+        for error in (state.get("api_errors") or [])
+    )
+    if not isinstance(state.get("private_inventory_complete"), bool):
+        state["private_inventory_complete"] = False
+    if not isinstance(state.get("private_inventory_attempted"), bool):
+        state["private_inventory_attempted"] = private_inventory_errors
+    if not isinstance(state.get("private_inventory_status"), str) or not state["private_inventory_status"]:
+        if state["private_inventory_complete"]:
+            state["private_inventory_status"] = "complete"
+        elif private_inventory_errors:
+            state["private_inventory_status"] = "failed"
+        elif state["private_inventory_attempted"]:
+            state["private_inventory_status"] = "incomplete"
+        else:
+            state["private_inventory_status"] = "unknown"
+    if not isinstance(state.get("private_inventory_scope"), str) or not state["private_inventory_scope"]:
+        state["private_inventory_scope"] = "unknown"
     _qualify_unseen_canonical_actions(state)
     return state
 
