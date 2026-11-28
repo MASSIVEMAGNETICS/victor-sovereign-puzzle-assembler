@@ -222,7 +222,38 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             guarded._ORIGINAL_BUILD_STATE = original
 
         self.assertEqual(state["receipt_generator"], "empire_autopilot_guarded.py")
-        self.assertTrue(state["private_inventory_complete"])
+        self.assertFalse(state["private_inventory_complete"])
+        self.assertFalse(state["private_inventory_attempted"])
+        self.assertEqual(state["private_inventory_status"], "unknown")
+        self.assertEqual(state["private_inventory_scope"], "unknown")
+
+    def test_legacy_state_without_coverage_or_errors_fails_closed(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        base_state = {
+            "api_errors": [],
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "priority": "P1",
+                    "repo": "MASSIVEMAGNETICS/suno-killer",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/suno-killer",
+                    "reason": "Manifest expects this repo but the current scan could not see it.",
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertFalse(state["private_inventory_complete"])
+        self.assertFalse(state["private_inventory_attempted"])
+        self.assertEqual(state["private_inventory_status"], "unknown")
+        self.assertEqual(
+            state["next_actions"][0]["title"],
+            "Resolve unseen canonical repo: MASSIVEMAGNETICS/suno-killer",
+        )
 
     def test_private_inventory_failure_qualifies_unseen_canonical_repo(self):
         original = guarded._ORIGINAL_BUILD_STATE
@@ -258,10 +289,14 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
         self.assertIn("private inventory coverage is incomplete", state["next_actions"][0]["reason"])
         self.assertNotIn("missing canonical repo", state["next_actions"][0]["title"].lower())
 
-    def test_complete_private_inventory_preserves_missing_canonical_wording(self):
+    def test_token_visible_inventory_does_not_prove_canonical_absence(self):
         original = guarded._ORIGINAL_BUILD_STATE
         base_state = {
             "api_errors": [],
+            "private_inventory_attempted": True,
+            "private_inventory_complete": True,
+            "private_inventory_status": "complete",
+            "private_inventory_scope": "token_visible",
             "next_actions": [
                 {
                     "kind": "recover_canonical_repo",
@@ -278,6 +313,37 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
             guarded._ORIGINAL_BUILD_STATE = original
 
         self.assertTrue(state["private_inventory_complete"])
+        self.assertEqual(
+            state["next_actions"][0]["title"],
+            "Resolve unseen canonical repo: MASSIVEMAGNETICS/actually-missing",
+        )
+        self.assertIn("coverage is incomplete", state["next_actions"][0]["reason"])
+
+    def test_owner_authoritative_inventory_preserves_missing_canonical_wording(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        base_state = {
+            "api_errors": [],
+            "private_inventory_attempted": True,
+            "private_inventory_complete": True,
+            "private_inventory_status": "complete",
+            "private_inventory_scope": "owner_authoritative",
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "repo": "MASSIVEMAGNETICS/actually-missing",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/actually-missing",
+                    "reason": "Manifest expects this repo but the current scan could not see it.",
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertTrue(state["private_inventory_complete"])
+        self.assertEqual(state["private_inventory_scope"], "owner_authoritative")
         self.assertIn("Resolve missing canonical repo", state["next_actions"][0]["title"])
 
     def test_private_inventory_qualification_preserves_non_recovery_actions(self):
@@ -357,6 +423,38 @@ class GuardedEmpireRoutingTests(unittest.TestCase):
                 guarded.render_markdown_guarded({})
         finally:
             guarded._ORIGINAL_RENDER_MARKDOWN = original
+
+
+    def test_not_attempted_private_inventory_qualifies_unseen_canonical_repo(self):
+        original = guarded._ORIGINAL_BUILD_STATE
+        base_state = {
+            "api_errors": [],
+            "private_inventory_attempted": False,
+            "private_inventory_complete": False,
+            "private_inventory_status": "not_attempted_no_token",
+            "next_actions": [
+                {
+                    "kind": "recover_canonical_repo",
+                    "repo": "MASSIVEMAGNETICS/private-canonical",
+                    "title": "Resolve missing canonical repo: MASSIVEMAGNETICS/private-canonical",
+                    "reason": "Manifest expects this repository but the current scan could not see it.",
+                }
+            ],
+        }
+        try:
+            guarded._ORIGINAL_BUILD_STATE = lambda *args, **kwargs: base_state
+            state = guarded.build_state_guarded()
+        finally:
+            guarded._ORIGINAL_BUILD_STATE = original
+
+        self.assertFalse(state["private_inventory_attempted"])
+        self.assertFalse(state["private_inventory_complete"])
+        self.assertEqual(state["private_inventory_status"], "not_attempted_no_token")
+        self.assertEqual(
+            state["next_actions"][0]["title"],
+            "Resolve unseen canonical repo: MASSIVEMAGNETICS/private-canonical",
+        )
+        self.assertIn("coverage is incomplete", state["next_actions"][0]["reason"])
 
 
 if __name__ == "__main__":

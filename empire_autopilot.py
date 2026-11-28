@@ -42,6 +42,10 @@ class GitHubAPI:
         self.timeout = timeout
         self.request_count = 0
         self.errors: List[str] = []
+        self.private_inventory_attempted = False
+        self.private_inventory_complete = False
+        self.private_inventory_status = "not_requested"
+        self.private_inventory_scope = "unknown"
 
     def _request(self, url: str) -> Tuple[Any, Dict[str, str]]:
         headers = {
@@ -78,14 +82,26 @@ class GitHubAPI:
     def paginated(self, path: str, params: Optional[Dict[str, Any]] = None, max_pages: int = 20) -> List[Any]:
         params = dict(params or {})
         params.setdefault("per_page", 100)
+        if max_pages < 1:
+            raise ValueError("max_pages must be at least 1")
+        per_page = int(params["per_page"])
         results: List[Any] = []
-        for page in range(1, max_pages + 1):
+        for page in range(1, max_pages + 2):
             params["page"] = page
             payload = self.get_json(path, params)
             if not isinstance(payload, list):
                 raise GitHubAPIError(f"Expected list from {path}, received {type(payload).__name__}")
+            if page > max_pages:
+                if payload:
+                    message = (
+                        f"GitHub API pagination limit reached for {path} after {max_pages} full pages; "
+                        "inventory completeness is unknown"
+                    )
+                    self.errors.append(message)
+                    raise GitHubAPIError(message)
+                break
             results.extend(payload)
-            if len(payload) < int(params["per_page"]):
+            if len(payload) < per_page:
                 break
             time.sleep(0.05)
         return results
@@ -217,6 +233,14 @@ def compute_attention_score(
 
 
 def list_owner_repos(api: GitHubAPI, owner: str, include_private: bool) -> List[Dict[str, Any]]:
+    """List owner repositories and record whether private coverage was verified."""
+    api.private_inventory_attempted = False
+    api.private_inventory_complete = False
+    api.private_inventory_status = "not_requested" if not include_private else "not_attempted_no_token"
+    api.private_inventory_scope = (
+        "not_requested" if not include_private else ("token_visible" if api.token else "none")
+    )
+
     public = api.paginated(
         f"/users/{urllib.parse.quote(owner)}/repos",
         {"type": "owner", "sort": "updated", "direction": "desc"},
@@ -224,6 +248,8 @@ def list_owner_repos(api: GitHubAPI, owner: str, include_private: bool) -> List[
     merged = {str(r.get("full_name")): r for r in public if r.get("full_name")}
 
     if include_private and api.token:
+        api.private_inventory_attempted = True
+        api.private_inventory_status = "in_progress"
         try:
             private_visible = api.paginated(
                 "/user/repos",
@@ -234,9 +260,13 @@ def list_owner_repos(api: GitHubAPI, owner: str, include_private: bool) -> List[
                 repo_owner = str((repo.get("owner") or {}).get("login") or "")
                 if full_name and repo_owner.lower() == owner.lower():
                     merged[full_name] = repo
+            # "complete" means pagination completed for this token-visible API view;
+            # it does not prove that the credential can see every private repo owned by the account.
+            api.private_inventory_complete = True
+            api.private_inventory_status = "complete"
         except GitHubAPIError:
-            # Public inventory remains valid; the report will expose API errors.
-            pass
+            # Public inventory remains valid; the report exposes incomplete private coverage.
+            api.private_inventory_status = "failed"
 
     return list(merged.values())
 
@@ -475,6 +505,8 @@ def render_markdown(state: Dict[str, Any]) -> str:
         f"| Active in last 14 days | {summary['active_14d']} |",
         f"| Archived | {summary['archived']} |",
         f"| Private visible | {summary['private_visible']} |",
+        f"| Private inventory coverage | {state.get('private_inventory_status', 'unknown')} |",
+        f"| Private inventory scope | {state.get('private_inventory_scope', 'unknown')} |",
         f"| Open PRs discovered | {summary['open_prs']} |",
         f"| Estimated open issues | {summary['open_issues_estimate']} |",
         "",
@@ -594,6 +626,10 @@ def build_state(
         "mission": manifest.get("mission"),
         "mode": cfg.get("default_mode", "observe-plan-assemble-local"),
         "cross_repo_write_policy": cfg.get("cross_repo_write_policy", "disabled-unless-explicitly-authorized"),
+        "private_inventory_attempted": bool(getattr(api, "private_inventory_attempted", False)),
+        "private_inventory_complete": bool(getattr(api, "private_inventory_complete", False)),
+        "private_inventory_status": str(getattr(api, "private_inventory_status", "unknown")),
+        "private_inventory_scope": str(getattr(api, "private_inventory_scope", "unknown")),
         "terminal_states": manifest.get("terminal_states", []),
         "summary": summary,
         "pillars": pillar_summary(snapshots, manifest),
